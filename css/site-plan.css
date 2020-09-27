@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
+
 
 :root {
-    --primary-color: hsl(161, 40%, 70%);
+    --primary-color: hsl(161, 40, 70);
     --secondary-color:  rgba(157, 181, 178);
     --accent1-color: rgba(59, 65, 60);
     --accent2-color: rgba(218, 240, 238);
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Playfair Display', serif;
 }
 
 html {
