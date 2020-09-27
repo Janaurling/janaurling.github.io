@@ -2,7 +2,7 @@
 
 
 :root {
-    --primary-color: hsl(161, 40, 70);
+    --primary-color: rgba(148, 209, 190);
     --secondary-color:  rgba(157, 181, 178);
     --accent1-color: rgba(59, 65, 60);
     --accent2-color: rgba(218, 240, 238);
@@ -102,7 +102,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color: var(--primary-color)
+    color: var(--accent1-color)
 }
 
 nav a:hover {
