@@ -47,7 +47,7 @@ header>h1 {
 
 p {
     font-family: var(--paragraph-font);
-    color: (var(--accent1-color));
+    color: var(--accent1-color);
     padding: 1em
 }
 
