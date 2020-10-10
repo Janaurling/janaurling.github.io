@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
-
-
 :root {
     --primary-color: rgba(148, 209, 190);
     --secondary-color:  rgba(157, 181, 178);
+    --third-color: rgba(84,110,122);
     --accent1-color: rgba(59, 65, 60);
     --accent2-color: rgba(218, 240, 238);
     --heading-font: 'Oswald', sans-serif;
     --paragraph-font: 'Playfair Display', serif;
 }
 
-html {
-    background-color: var(--primary-color)
-}
-
-body {
-    max-width: 900px;
+header, main, footer {
+    max-width: 960px;
     margin: 0 auto;
-    background-color:rgba(255, 255, 255);
-    padding: 1em
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+  }
+}html {
+    background-color: var(--primary-color)
 }
 
 img {
@@ -32,58 +31,14 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: var(--accent1-color)}
-
-header {
-    padding: 1em;
-    text-align: center;
-    color: var(--accent1-color);
-    background-color: var(--accent2-color)
-}
-
-header>h1 {
-    color: var(--accent1-color)
-}
+    color: var(--third-color)}
 
 p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
-    padding: 1em
 }
 
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: auto;
-    text-align: center
-}
-
-.colors th {
-    background-color: #999
-}
-
-.colors td {
-    width: 25%;
-    height: 3em
-}
-
-.primary {
-    background-color: var(--primary-color)
-}
-
-.secondary {
-    background-color: var(--secondary-color)
-}
-
-.accent1 {
-    background-color: var(--accent1-color)
-}
-
-.accent2 {
-    background-color: var(--accent2-color)
-}
-
-nav {gn   
+nav {
     background-color: var(--accent2-color) ;
     line-height: 3em;
     text-align: center;
@@ -92,12 +47,14 @@ nav {gn
 
 nav>ul {
     list-style-type: none;
-    display: flex
+    display: flex;
+    text-align: center;
 }
 
 nav a {
     padding: 1em;
     min-width: 70px
+    
 }
 
 nav a:link,
