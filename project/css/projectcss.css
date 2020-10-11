@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
+
 :root {
     --primary-color: rgba(148, 209, 190);
     --secondary-color:  rgba(157, 181, 178);
     --third-color: rgba(84,110,122);
+    --fourth-color: rgba(218,240,238);
     --accent1-color: rgba(59, 65, 60);
-    --accent2-color: rgba(218, 240, 238);
     --heading-font: 'Oswald', sans-serif;
     --paragraph-font: 'Playfair Display', serif;
 }
@@ -14,9 +15,9 @@ header, main, footer {
     margin: 0 auto;
     text-align: center;
     color: var(--accent1-color);
-    background-color: var(--accent2-color);
+    background-color: var(--fourth-color);
   }
-}html {
+html {
     background-color: var(--primary-color)
 }
 
@@ -39,7 +40,7 @@ p {
 }
 
 nav {
-    background-color: var(--accent2-color) ;
+    background-color: var(--primary-color) ;
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
