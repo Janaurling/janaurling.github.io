@@ -6,31 +6,60 @@
     --third-color: rgba(84,110,122);
     --fourth-color: rgba(218,240,238);
     --accent1-color: rgba(59, 65, 60);
-    --heading-font: 'Oswald', sans-serif;
-    --paragraph-font: 'Playfair Display', serif;
+    --heading-font: 'Oswald', Charcoal, sans-serif;
+    --paragraph-font: 'Playfair Display', Times, serif;
 }
 
-header, main, footer {
+header {
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
     color: var(--accent1-color);
     background-color: var(--fourth-color);
+    display: flex;
+    align-items: center;
   }
+body {
+    font-size: 16px;
+    text-align: left;
+}
+main{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--accent1-color);
+    background-color: var(--fourth-color);
+}
+footer{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--accent1-color);
+    background-color: var(--fourth-color);
+}
 html {
     background-color: var(--primary-color)
 }
 
-img {
-    max-width: 100%
+
+h1 {
+    color: var(--third-color)
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    width: 100%;
+    border: 1rem, 0;
+    padding: 3rem, 0;
+    margin: 2rem;
     font-family: var(--heading-font);
     color: var(--third-color)}
 
@@ -40,7 +69,7 @@ p {
 }
 
 nav {
-    background-color: var(--primary-color) ;
+    background-color: var(--fourth-color) ;
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -53,7 +82,7 @@ nav>ul {
 }
 
 nav a {
-    padding: 1em;
+    padding: 1rem;
     min-width: 70px
     
 }
@@ -66,4 +95,12 @@ nav a:visited {
 nav a:hover {
     color: var(--secondary-color);
     background-color:var(--accent1-color)
+}
+img{
+    border: 1rem
+    padding: 3rem;
+    margin: 2rem;
+}
+.section1, .section2, .section3 {
+    display: flex;
 }
