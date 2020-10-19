@@ -8,6 +8,7 @@
     --accent1-color: rgba(59, 65, 60);
     --heading-font: 'Oswald', Charcoal, sans-serif;
     --paragraph-font: 'Playfair Display', Times, serif;
+    font-size: 16px;
 }
 
 header {
@@ -104,8 +105,9 @@ nav a:hover {
     background-color:var(--accent1-color)
 }
 img{
-    
+
 }
 .section1, .section2, .section3 {
     display: flex;
+    padding:30px
 }
