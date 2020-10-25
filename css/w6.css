@@ -87,8 +87,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap:50px;
-    justify-items: ;
-    max width: 960px
+    max-width: 960px;
   }
   .red3{
     width: 100%;
@@ -121,12 +120,15 @@ body {
   .content4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    
   }
   .red4 {
-    width: 300px;
+    width: 100%px;
     height: 300px;
+    min-width: 300px;
     background-color: red;
+    grid-column: 1;
+    grid-row: 1/4;
   }
   
   .green4 {
@@ -140,6 +142,7 @@ body {
     height: 100px;
     background-color: gold;
   }
+
   
   .blue4 {
     width: 100%;
@@ -149,16 +152,16 @@ body {
 
    
   .content5 {
-    display: flex
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    justify-items: center;
+  display: table;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
   }
+
   .red5 {
     width: 100%;
     height: 100px;
     background-color: red;
-    grid-column: 1/3;
+   
   }
   
   .green5 {
@@ -166,12 +169,25 @@ body {
     height: 200px;
     float: left;
     background-color: green;
+    margin-bottom: 15px;
+    margin-right: 15px;
   }
   
   .gold5 {
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: gold;
+  }
+
+  .gold5 p{
+  margin-top: 0; 
+
+  }
+
+  .gold5::after {
+    content: "";
+    display: table;
+    clear: both
   }
   
   .blue5 {
@@ -183,32 +199,47 @@ body {
    
   .content6 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    justify-items: center;
+    grid-template-columns: 100px,100px,100px,100px,100px,100px,;
+    grid-template-rows: 100px,100px,100px,100px,100px,100px,;
+    position: relative;
   }
   .red6 {
-    width: 100%;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     background-color: red;
-    grid-column: 1/3;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
   }
   
   .green6 {
     width: 200px;
     height: 200px;
     background-color: green;
+    z-index: 3;
+    position: absolute;
+    top: 400px;
+    left: 0 ;
   }
   
   .gold6 {
     width: 200px;
-    height: 200px;
+    height: 400px;
     background-color: gold;
+    z-index: 3 ;
+    position: absolute;
+    top: 200px;
+    left: 400px;
   }
   
   .blue6 {
-    width: 100%;
-    height: 100px;
+    width: 400px;
+    height: 400px;
     background-color: blue;
-    grid-column: 1/3;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 100px;
   }
