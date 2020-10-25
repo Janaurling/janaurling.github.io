@@ -1,0 +1,214 @@
+body {
+    font-size: 16px;
+    background-color: #fff;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 960px;
+  }
+  
+  .content1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      justify-items: center;
+    
+  }
+  
+  .red1 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+  }
+  
+  .green1 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+  
+  .gold1 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+  }
+  
+  .blue1 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+  }
+ 
+  .content2 {
+    position:relative;
+    height: 300px
+
+  }
+  .red2 {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+  }
+  
+  .green2 {
+    position: absolute;
+    top: 50px;
+    left:50px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+  
+  .gold2 {
+    position: absolute;
+    top: 100px;
+    left:100px;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+  }
+  
+  .blue2{
+    position: absolute;
+    top: 150px;
+    left:150px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+  }
+   
+  .content3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:50px;
+    justify-items: ;
+    max width: 960px
+  }
+  .red3{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+  }
+  
+  .green3 {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    
+  }
+  
+  .gold3{
+    width: 100%;
+    height: 200px;
+    background-color: gold;
+    
+  }
+  
+  .blue3 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+  }
+   
+  .content4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .red4 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+  }
+  
+  .green4 {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+  }
+  
+  .gold4 {
+    width: 100%;
+    height: 100px;
+    background-color: gold;
+  }
+  
+  .blue4 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+  }
+
+   
+  .content5 {
+    display: flex
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  .red5 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+  }
+  
+  .green5 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-color: green;
+  }
+  
+  .gold5 {
+    width: 100%;
+    height: 200px;
+    background-color: gold;
+  }
+  
+  .blue5 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+  }
+   
+  .content6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  .red6 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    grid-column: 1/3;
+  }
+  
+  .green6 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+  
+  .gold6 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+  }
+  
+  .blue6 {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    grid-column: 1/3;
+  }
