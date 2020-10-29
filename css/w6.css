@@ -198,18 +198,17 @@ body {
   }
    
   .content6 {
-    display: grid;
-    position: relative;
+    display : grid;
+    grid-template-columns : 100px 100px 100px 100px 100px 100px;
+    grid-template-rows : 100px 100px 100px 100px 100px 100px;
   }
   .red6 {
     width: 400px;
     height: 200px;
     background-color: red;
     z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
+    grid-row: 1/3;
+    grid-column: 1/5;
   }
   
   .green6 {
@@ -217,9 +216,8 @@ body {
     height: 200px;
     background-color: green;
     z-index: 3;
-    position: absolute;
-    top: 400px;
-    left: 0 ;
+    grid-row:5/7 ;
+    grid-column: 1/3;
   }
   
   .gold6 {
@@ -227,9 +225,9 @@ body {
     height: 400px;
     background-color: gold;
     z-index: 3 ;
-    position: absolute;
-    top: 200px;
-    left: 400px;
+    grid-row: 3/7 ;
+    grid-column: 5/7;
+
   }
   
   .blue6 {
@@ -237,7 +235,6 @@ body {
     height: 400px;
     background-color: blue;
     z-index: 2;
-    position: absolute;
-    top: 100px;
-    left: 100px;
+    grid-row: 2/6;
+    grid-column: 2/6;
   }
