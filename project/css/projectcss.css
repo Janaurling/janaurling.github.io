@@ -34,14 +34,8 @@ body {
 }
 main{
     max-width: 100%;
-
     color: var(--accent1-color);
     background-color: var(--fourth-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:  177px 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 0;
 }
 .banner{
     max-width: 960px;
@@ -56,6 +50,13 @@ main{
     grid-row: 1/3;
     grid-column:1/3 ;
     width: 960px;
+}
+.homepage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  177px 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0;
 }
 .action{
     background-color: rgba(var(--secondary-color), 0.2);
@@ -93,6 +94,7 @@ main{
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 5px 5px 5px #999;
+    align-self: center;
 }
 .section2heading{
     grid-row: 3/4;
@@ -106,6 +108,7 @@ main{
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 5px 5px 5px #999;
+    align-self: center;
 }
 .section3heading{
     grid-row: 4/5;
@@ -113,6 +116,98 @@ main{
     justify-content: center;
 }
 
+.amenities{
+    display:grid;
+    grid-auto-rows: auto;
+    grid-template-rows: 3rem 1fr 1fr;
+    gap: 2rem;
+}
+.amenitiesheading{
+    grid-row: 1/2;
+}
+.celestialcomfort{
+    grid-row: 2/3;
+    grid-column:1/2;
+    display:grid;
+    grid-template-rows: 3rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 1rem
+}
+
+.celestialcomfortheading{
+    grid-row:1/2;
+    grid-column: 1/5;
+}
+.breakfast{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.exercise{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.pool{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.parking{
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.yourstay{
+    grid-row: 3/4;
+    grid-column:1/2;
+    display:grid;
+    grid-template-rows: 3rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 1rem;
+}
+.yourstayheading{
+    grid-row:1/2;
+    grid-column: 1/4;
+}
+.wifi{
+    grid-row:2/3;
+    grid-column: 1/2;
+}
+.templeshuttle{
+    grid-row:2/3;
+    grid-column: 2/3;
+}
+.familyhistoryconsult{
+    grid-row:2/3;
+    grid-column: 3/4;
+}
+
+.templespotlight1{
+    display:grid;
+    max-width: 960px;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 50% 50%;
+}
+.templename{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.templespotlightimg{
+    grid-row:1/3;
+    grid-column:2/3;
+    align-self: center
+}
+.templespotlight2{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.templecalendar{
+    grid-column:1/2
+}
+.templecontact{
+    grid-column:2/3
+}
+.additional info{
+    grid-column:3/4
+}
 
 footer{
     max-width: 960px;
