@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <title> Temple Inn & Suites | Your Home Away From Home | 215-529-9999 </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Temple Inn & Suites is a hotel chain specializing in hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="description"
+        content="The Temple Inn & Suites is a hotel chain specializing in hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints.">
     <link rel="stylesheet" href="css/projectcss.css">
 </head>
+
 <body>
     <header>
         <img src="images/hotel_logo.png" alt="logo" width="50" height="50">
@@ -19,22 +22,74 @@
                 <li><a href="reservations.html">Reservations</a></li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main>
-       
+        <div class="reservationsform">
+            <form>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                    </li>
+                    <li>
+                        <label for="phonenumber">Phone Number:</label><br>
+                        <input type="number" id="phonenumber" name="phonenumber"><br>
+                    </li>
+                    <li>
+                        <label for="startdate">Start Date:</label><br>
+                        <input type="date" id="startdate" name="startdate"><br>
+                    </li>
+                    <li>
+                        <label for="enddate">End Date:</label><br>
+                        <input type="date" id="enddate" name="enddate"><br>
+                    </li>
+                    <li>
+                        <label for="numberofguests">Number of Guests:</label><br>
+                        <input type="number" id="numberofguests" name="numberofguests"><br>
+                    </li>
+                    <li>
+                        <label for="otherrequests">Other Requests:</label>
+                        <textarea id="otherrequests" name="otherrequests"></textarea> </li>
+                    <li class="button">
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form element so we can read what was entered in it.
+            const formElement = document.forms[0];
+
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function (e) {
+                // stop the form from doing the default action
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                    '! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+            });
+        </script>
     </main>
     <footer>
         <div class="contact">
             <p>Temple Inn & Suites Headquarters <br> 355 Wisconsin Avenue <br>
-            Bethesda, MD 20814<br>
-            215-829-9999 <br>
-            info@templeinn.com <br>
+                Bethesda, MD 20814<br>
+                215-829-9999 <br>
+                info@templeinn.com <br>
             </p>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com" target="_blank" >
+            <a href="https://www.facebook.com" target="_blank">
                 <img src="images/facebook_icon.png" alt="Facebook icon" width="40" height="40">
             </a>
             <a href="https://www.instagram.com" target="_blank">
@@ -43,11 +98,14 @@
             <a href="https://www.twitter.com" target="_blank">
                 <img src="images/twitter_icon.png" alt="Twitter icon" width="40" height="40">
             </a>
-        
+
         </div>
         <div class="copy">
-            <p>Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statements | Jana Urling</p>
+            <p>Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statements | Jana
+                Urling</p>
         </div>
     </footer>
+
 </body>
+
 </html>
