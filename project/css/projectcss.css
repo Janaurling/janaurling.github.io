@@ -321,7 +321,12 @@ html {
 
 
 h1 {
-    color: white;
+    color:var(--fourth-color);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
     background-color: var(--primary-color);
     border: 0;
     padding: 0;
