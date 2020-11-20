@@ -245,6 +245,7 @@ main {
     width: 500px;
     padding: 2rem;
     border: 1px solid var(--accent1-color);
+    padding:2rem;
     border-radius: 1em;
 }
 
@@ -334,7 +335,7 @@ h1 {
     background-color: var(--secondary-color);
     border: 0;
     padding: 0;
-    margin: 1rem;
+    
     font-family: var(--heading-font);
     text-align: center;
 

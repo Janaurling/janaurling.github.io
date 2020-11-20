@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="hotellogo">
-        <img src="images/newlogo.png" alt="Temple Inn and Suites Logo" width="50" height="50">
+            <img src="images/newlogo.png" alt="Temple Inn and Suites Logo" width="50" height="50">
         </div>
         <h1>Temple Inn and Suites</h1>
         <nav>
@@ -28,59 +28,67 @@
     </header>
 
     <main>
-        <div class="reservationsform">
-            <form>
-                <ul>
-                    <li>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name"><br>
-                    </li>
-                    <li>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                    </li>
-                    <li>
-                        <label for="phonenumber">Phone Number:</label><br>
-                        <input type="number" id="phonenumber" name="phonenumber"><br>
-                    </li>
-                    <li>
-                        <label for="startdate">Start Date:</label><br>
-                        <input type="date" id="startdate" name="startdate"><br>
-                    </li>
-                    <li>
-                        <label for="enddate">End Date:</label><br>
-                        <input type="date" id="enddate" name="enddate"><br>
-                    </li>
-                    <li>
-                        <label for="numberofguests">Number of Guests:</label><br>
-                        <input type="number" id="numberofguests" name="numberofguests"><br>
-                    </li>
-                    <li>
-                        <label for="otherrequests">Other Requests:</label>
-                        <textarea id="otherrequests" name="otherrequests"></textarea> </li>
-                    <li class="button">
-                        <button type="submit">Submit</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form element so we can read what was entered in it.
-            const formElement = document.forms[0];
+        <div class="reservations">
+            <div class="reservationsheading">
+                <h1>Reservations</h1>
+                <p>Please fill out the below and we will get back to you within 1 business day to confirm your
+                    reservation.</p>
+            </div>
+            <div class="reservationsform">
 
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function (e) {
-                // stop the form from doing the default action
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
-                    '! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-            });
-        </script>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                        </li>
+                        <li>
+                            <label for="phonenumber">Phone Number:</label><br>
+                            <input type="number" id="phonenumber" name="phonenumber"><br>
+                        </li>
+                        <li>
+                            <label for="startdate">Start Date:</label><br>
+                            <input type="date" id="startdate" name="startdate"><br>
+                        </li>
+                        <li>
+                            <label for="enddate">End Date:</label><br>
+                            <input type="date" id="enddate" name="enddate"><br>
+                        </li>
+                        <li>
+                            <label for="numberofguests">Number of Guests:</label><br>
+                            <input type="number" id="numberofguests" name="numberofguests"><br>
+                        </li>
+                        <li>
+                            <label for="otherrequests">Other Requests:</label>
+                            <textarea id="otherrequests" name="otherrequests"></textarea> </li>
+                        <li class="button">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form element so we can read what was entered in it.
+                const formElement = document.forms[0];
+
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function (e) {
+                    // stop the form from doing the default action
+                    e.preventDefault();
+                    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                    feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                        '! Thank you for your message. We will get back with you as soon as possible!';
+                    // make the feedback element visible.
+                    feedbackElement.style.display = "block";
+                });
+            </script>
+        </div>
     </main>
     <footer>
         <div class="contact">
