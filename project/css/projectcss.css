@@ -239,7 +239,7 @@ main {
 .reservationsform {
     margin: 0 auto;
     width: 500px;
-    padding: 1em;
+    padding: 2rem;
     border: 1px solid var(--accent1-color);
     border-radius: 1em;
 }
