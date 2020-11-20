@@ -345,11 +345,6 @@ html {
 
 h1 {
     color:var(--fourth-color);
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
     background-color: var(--secondary-color);
     border: 0;
     padding: 0;
