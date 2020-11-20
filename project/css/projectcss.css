@@ -139,6 +139,7 @@ main {
 
 .amenitiesheading {
     grid-row: 1/2;
+    padding:10px;
 }
 
 .celestialcomfort {
@@ -210,6 +211,9 @@ main {
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 50% 50%;
 }
+.templespotlightheading{
+    padding:10px;
+}
 
 .templename {
     grid-row: 1/2;
@@ -237,6 +241,9 @@ main {
 
 .additional info {
     grid-column: 3/4
+}
+.reservationsheading{
+    padding:10px
 }
 
 .reservationsform {
@@ -334,7 +341,7 @@ h1 {
     background-color: var(--secondary-color);
     border: 0;
     padding: 0;
-    
+    margin: 0;
     font-family: var(--heading-font);
     text-align: center;
 
