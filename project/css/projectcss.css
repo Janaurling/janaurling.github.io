@@ -4,7 +4,6 @@
     --primary-color: rgb(191, 209, 229);
     --secondary-color: rgb(35, 59, 87);
     --translucent: rgba(84, 35, 68, 0.2);
-    --third-color:;
     --fourth-color: rgb(235, 245, 238);
     --accent1-color: rgb(84, 35, 68);
     --heading-font: 'Oswald', Charcoal, sans-serif;
@@ -391,6 +390,6 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: rgb(var(--secondary-color));
+    color: var(--secondary-color);
     background-color: var(--fourth-color)
 }
