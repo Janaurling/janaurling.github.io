@@ -393,12 +393,15 @@ nav {
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
+    
 }
 
 nav>ul {
     list-style-type: none;
     display: flex;
     text-align: center;
+    margin-left: 6rem;
+    float: right
 }
 
 nav a {
