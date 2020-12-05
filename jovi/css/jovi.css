@@ -12,23 +12,15 @@
     --heading-font: 'Abril Fatface', cursive;
     --paragraph-font: 'Noto Sans JP', sans-serif;
 }
-
 html {
     background-color: var(--color-main2)
 }
-
 body {
     max-width: 900px;
     margin: 0 auto;
-    background-color:var(--color-white);
+    background-color:var(--color-main1);
     padding: 1em
 }
-
-img {
-    max-width: 100%
-
-}
-
 h1,
 h2,
 h3,
@@ -40,67 +32,21 @@ h6 {
 }
 
 header {
-    padding: 1em;
     text-align: center;
     color: var(--color-white);
     background-color:var(--color-main3);
-    
-}
+    display: flex;
+    width: 100%
 
+}
 header>h1 {
     color:var(--color-main1)
 }
-
 p {
     font-family: var(--paragraph-font);
     color: var(--color-accent3);
     padding: 1em
 }
-
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: auto;
-    text-align: center
-}
-
-.colors th {
-    background-color: var(--color-white)
-}
-
-.colors td {
-    width: 14%;
-    height: 3em
-}
-
-.maincolor1 {
-    background-color: var(--color-main1)
-}
-
-.maincolor2 {
-    background-color: var(--color-main2)
-}
-
-.maincolor3 {
-    background-color: var(--color-main3)
-}
-
-.accent1 {
-    background-color: var(--color-accent1)
-}
-
-.accent2 {
-    background-color: var(--color-accent2)
-}
-
-.accent3 {
-    background-color: var(--color-accent3)
-}
-
-.accent4 {
-    background-color: var(--color-accent4)
-}
-
 nav {
     background-color: var(--color-main3);
     line-height: 3em;
