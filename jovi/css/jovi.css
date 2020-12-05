@@ -21,7 +21,7 @@ body {
     font-size: 16px;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -48,6 +48,7 @@ header {
     grid-template-rows: 1fr;
     background-color: var(--color-main3);
 }
+
 .headerContent{
     
     width: 960px
@@ -64,7 +65,7 @@ header {
     grid-row:1/2
 }
 
-header>h1 {
+h1 {
     color:var(--color-main1)
 }
 
