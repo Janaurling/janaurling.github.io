@@ -120,7 +120,8 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     justify-items: center;
-    align-items: center
+    align-items: center;
+    background-color: var(--color-main1);
 }
 .contact{
     grid-column: 1/2
