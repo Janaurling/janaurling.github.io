@@ -18,6 +18,17 @@
         display: block;
     }
 }
+main{
+
+    overflow-x: hidden;
+      
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none
+}
 html {
     background-color: var(--color-main2)
 }
@@ -45,8 +56,8 @@ header {
     color: var(--color-white);
     background-color:var(--color-main3);
     display: flex;
-    width: 100%
-
+    width: 100%;
+    overflow-x: hidden;
 }
 .header{
     width: 100%;
@@ -156,7 +167,7 @@ footer{
     display:flex;
     justify-content: center;
 }
-.homequote{
+.homequote, .homesection3{
     background-color: var(--color-white);
     padding: 2rem
 }
@@ -179,6 +190,9 @@ footer{
     grid-column: 3/4
 }
 .homesection3{
+    text-align: center
+}
+.homesection4{
     display:flex;
     justify-content: center;
 }
