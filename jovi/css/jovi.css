@@ -13,6 +13,11 @@
     --paragraph-font: 'Noto Sans JP', sans-serif;
     
 }
+@media screen and (max-width: 550px) {
+    .main, body{
+        display: block;
+    }
+}
 html {
     background-color: var(--color-main2)
 }
@@ -20,7 +25,11 @@ body {
     background-color:var(--color-main1);
     font-size: 16px;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
 
 h2,
 h3,
@@ -168,4 +177,8 @@ footer{
 }
 .homeimage3{
     grid-column: 3/4
+}
+.homesection3{
+    display:flex;
+    justify-content: center;
 }
