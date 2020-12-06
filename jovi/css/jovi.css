@@ -13,11 +13,7 @@
     --paragraph-font: 'Noto Sans JP', sans-serif;
     
 }
-@media screen and (max-width: 550px) {
-    .main, body{
-        display: block;
-    }
-}
+
 main{
 
     overflow-x: hidden;
@@ -40,7 +36,7 @@ img{
     max-width: 100%;
     height: auto;
     width: auto\9;
-    object-fit: contain
+
 }
 
 h2,
@@ -165,8 +161,16 @@ footer{
     grid-column:4/5
 }
 .homesection1{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
+    
+}
+.girlgroupimg{
+    grid-column: 1/2
+}
+.painquoteimg{
+    grid-column: 2/3
 }
 .homequote, .homesection3{
     background-color: var(--color-white);
@@ -194,6 +198,13 @@ footer{
     text-align: center
 }
 .homesection4{
-    display:flex;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    object-fi
+}
+.testimonialimg{
+    grid-column: 1/2
+}
+.sunglassesimg{
+    grid-column: 2/3
 }
