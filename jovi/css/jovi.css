@@ -198,7 +198,7 @@ footer{
 .homesection4{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    object-fi
+    object-fit:contain
 }
 .testimonialimg{
     grid-column: 1/2
