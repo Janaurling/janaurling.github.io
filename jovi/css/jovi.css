@@ -73,9 +73,7 @@ header {
 .headerlogo{
     grid-column: 2/3;
     grid-row: 1/2;
-    padding:0px;
     margin: 5px;
-    border:0px;
 }
 .headertitle{
     grid-column: 1/2;
