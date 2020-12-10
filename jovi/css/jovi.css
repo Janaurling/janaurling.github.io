@@ -150,7 +150,11 @@ footer{
 .social{
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    
+}
+.facebook, .insta, .twitter{
+    padding: 5px
 }
 .facebook{
     grid-column:2/3
