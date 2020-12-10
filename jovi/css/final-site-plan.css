@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP:wght@300&display=swap');
+
+:root {
+    --color-main1: #e5d6eb;
+    --color-main2: #a1bfe3;
+    --color-main3: #902170;
+    --color-accent1: #313b7e;
+    --color-accent2:#f25206;
+    --color-accent3: #1d2349;
+    --color-accent4:#ceadd7;
+    --color-white: white;
+    --heading-font: 'Abril Fatface', cursive;
+    --paragraph-font: 'Noto Sans JP', sans-serif;
+}
+
+html {
+    background-color: var(--color-main2)
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:var(--color-white);
+    padding: 1em
+}
+
+img {
+    max-width: 100%
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color:var(--color-accent2)
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--color-white);
+    background-color:var(--color-main3);
+    
+}
+
+header>h1 {
+    color:var(--color-main1)
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--color-accent3);
+    padding: 1em
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
+}
+
+.colors th {
+    background-color: var(--color-white)
+}
+
+.colors td {
+    width: 14%;
+    height: 3em
+}
+
+.maincolor1 {
+    background-color: var(--color-main1)
+}
+
+.maincolor2 {
+    background-color: var(--color-main2)
+}
+
+.maincolor3 {
+    background-color: var(--color-main3)
+}
+
+.accent1 {
+    background-color: var(--color-accent1)
+}
+
+.accent2 {
+    background-color: var(--color-accent2)
+}
+
+.accent3 {
+    background-color: var(--color-accent3)
+}
+
+.accent4 {
+    background-color: var(--color-accent4)
+}
+
+nav {
+    background-color: var(--color-main3);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--color-main3)
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--color-main1);
+}
+
+nav a:hover {
+    color: var(--color-accent2);
+    background-color: var(--color-main1)
+}

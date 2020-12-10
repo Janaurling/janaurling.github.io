@@ -211,3 +211,33 @@ footer{
 .sunglassesimg{
     grid-column: 2/3
 }
+input[type=text], select, textarea, input[type=email] {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid var(--color-main3) ;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    color: var(--color-accent3)
+}
+  
+  input[type=submit] {
+    background-color: var(--color-accent2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+
+  }
+  
+  input[type=submit]:hover {
+    background-color:var(--color-accent2);
+    color: var(--color-accent3)
+  }
+  
+  .contactform {
+    border-radius: 5px;
+    background-color:var(--color-main1);
+    padding: 20px;
+    color: var(--color-accent3)
