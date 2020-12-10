@@ -113,13 +113,16 @@ nav {
 nav>ul {
     list-style-type: none;
     display: flex;
-    margin:0px
+    margin:0px;
+    white-space: nowrap;
+    padding: 0px
 }
 
 nav a {
     padding: 1em;
     min-width: 70px
 }
+
 
 nav a:link,
 nav a:visited {
@@ -182,7 +185,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     justify-items: center;
-    align-items: center;
+    align-content: center;
 }
 .homeimage1{
     grid-column: 1/2
@@ -200,7 +203,7 @@ footer{
     display:grid;
     grid-template-columns: 1fr 1fr;
     object-fit:contain;
-    align-items: center
+    align-content: center
 }
 .testimonialimg{
     grid-column: 1/2
