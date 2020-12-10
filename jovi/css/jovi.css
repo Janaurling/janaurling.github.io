@@ -257,26 +257,46 @@ input[type=text], select, textarea, input[type=email] {
       size: 5rem;
       padding: 1rem
   }
+  .sciencesection3{
+      display: grid;
+      grid-template-rows: 1fr 4fr;
+      grid-template-columns: 1fr 1fr 1fr
+  }
   span{
       color: var(--color-accent3);
     
   }
-  .card{
-    width: 320px;
+article{
+    width: 300px;
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 3px;
     background-color: white;       
-   overflow:hidden
+   overflow:hidden;
+   margin: 2rem
+}
+.card1{
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+.card2{
+    grid-column: 2/3;
+    grid-row: 2/3
+}.card3{
+    grid-column: 3/4;
+    grid-row: 2/3
 }
 .rating{ 
-    grid-column: 4/5
+    grid-column: 4/5;
+    padding: 10px
 }
 button{
     background-color:white;
-    color: #888;
+    color:var(--color-accent2);
     border-width: 1px;
-    border-color: black;
-    padding: 10px
+    border-color: var(--color-accent3);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px
 }
 .cardfooter{
     display: grid;
@@ -284,13 +304,5 @@ button{
     align-items: center;
     background-color: var(--color-main2);
 }
-.readmorebutton{
-    margin-top:10px;
-    margin-right: -5px;
-    margin-bottom: 10px; 
-    margin-left: 10px;
-    border-radius: 3px;
-    grid-column: 1/2;
-    padding;: 10px
-    
+
 }
