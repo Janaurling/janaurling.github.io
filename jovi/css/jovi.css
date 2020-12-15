@@ -14,7 +14,7 @@
     
 }
 @media screen and (max-width: 550px) {
-    main, {
+    main{
         display: block;
     }
 }
@@ -233,7 +233,7 @@ input[type=text], select, textarea, input[type=email] {
 }
   
   input[type=submit] {
-    background-color: var(--color-accent2);
+    background-color: var(--color-accent1);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -269,6 +269,10 @@ input[type=text], select, textarea, input[type=email] {
   .sciencesection1>h2{
       size: 5rem;
       padding: 1rem
+  }
+  .sciencesection2>h2{
+        background-color: var(--color-white);
+        padding: 2em
   }
   .sciencesection3{
       display: grid;
@@ -331,12 +335,13 @@ article>footer{
 }
 button{
     background-color:white;
-    color:var(--color-accent2);
+    color:var(--color-accent3);
     border-width: 1px;
     border-color: var(--color-accent3);
     padding: 10px;
     margin: 10px;
-    border-radius: 3px
+    border-radius: 3px; 
+
 }
 .cardfooter{
     display: grid;
