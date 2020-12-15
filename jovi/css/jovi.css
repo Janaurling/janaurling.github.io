@@ -13,11 +13,15 @@
     --paragraph-font: 'Noto Sans JP', sans-serif;
     
 }
-
+@media screen and (max-width: 550px) {
+    main, {
+        display: block;
+    }
+}
 main{
-
+    max-width: 1000px;
     overflow-x: hidden;
-      
+    margin: auto;
 }
 a:link,
 a:visited,
@@ -35,8 +39,7 @@ body {
 img{
     max-width: 100%;
     height: auto;
-    
-
+    width: 100%
 }
 
 h2,
@@ -45,7 +48,8 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color:var(--color-accent2)
+    color:var(--color-accent2);
+    padding: 1rem
 }
 
 header {
@@ -71,6 +75,7 @@ header {
     width: 960px
 }
 .headerlogo{
+    max-width: 80px;
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 5px;
@@ -145,7 +150,8 @@ footer{
     grid-column: 1/2
 }
 .footerlogo{
-    grid-column: 2/3
+    grid-column: 2/3; 
+    max-width: 80px;
 }
 .social{
     width: 100%;
@@ -244,14 +250,21 @@ input[type=text], select, textarea, input[type=email] {
     border-radius: 5px;
     background-color:var(--color-main1);
     padding: 20px;
-    color: var(--color-accent3)
+    color: var(--color-accent3);
+    max-width: 50%;
+    margin: auto
   }
+
   .sciencesection1{
       display: flex;
       background-color: var(--color-white);
       justify-content: center;
-      object-fit: contain;
-      align-items: center
+      align-items: center;
+
+  }
+  .sciencesection1>img{
+      max-width: 50%;
+      height: auto;
   }
   .sciencesection1>h2{
       size: 5rem;
@@ -260,24 +273,46 @@ input[type=text], select, textarea, input[type=email] {
   .sciencesection3{
       display: grid;
       grid-template-rows: 1fr 4fr;
-      grid-template-columns: 1fr 1fr 1fr
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 1rem
+
+
   }
   span{
       color: var(--color-accent3);
     
   }
 article{
-    width: 300px;
+    display: grid; 
+    grid-template-rows: 3fr 2fr 1fr;
+    width: 100%;
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 3px;
     background-color: white;       
    overflow:hidden;
-   margin: 2rem
+   margin: 2rem; 
+    max-width: 90%;
+ 
+   
+}
+article>img{
+    grid-row: 1/2
+}
+article>p{
+    grid-row: 2/3;
+    align-items: center
+}
+article>footer{
+    grid-row: 3/4;
 }
 .reviewheader{
     grid-row: 1/2;
-    grid-column: 1/5;
-    justify-items: center;
+    grid-column: 1/4;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-white);
+    width: 100%
 }
 .card1{
     grid-column: 1/2;
@@ -308,6 +343,12 @@ button{
     grid-template-columns: 1fr 1fr 3fr 1fr;
     align-items: center;
     background-color: var(--color-main2);
+}
+.sciencesection4{
+    text-align: center;
+    background-color: var(--color-white);
+    padding: 2rem;
+
 }
 
 
