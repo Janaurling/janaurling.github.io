@@ -35,6 +35,7 @@ html {
 body {
     background-color:var(--color-main1);
     font-size: 16px;
+    margin: 0px
 }
 img{
     max-width: 100%;
@@ -60,6 +61,7 @@ header {
     width: 100%;
     overflow-x: hidden;
     z-index: 99;
+    margin: 0
 }
 .header{
     width: 100%;
@@ -160,9 +162,11 @@ footer{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
     
+    
 }
 .facebook, .insta, .twitter{
-    padding: 5px
+    padding: 5px;
+    min-width: 30px;
 }
 .facebook{
     grid-column:2/3
@@ -279,11 +283,16 @@ input[type=text], select, textarea, input[type=email] {
   .sciencesection3{
       display: grid;
       grid-template-rows: 1fr 4fr;
-      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
-      gap: 1rem
+      grid-template-columns: 1fr
 
 
+  }
+  .reviewcards{
+      grid-row: 2/3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center
   }
   span{
       color: var(--color-accent3);
@@ -298,7 +307,8 @@ article{
     background-color: white;       
    overflow:hidden;
    margin: 2rem; 
-    max-width: 90%;
+    max-width: 250px;
+    min-width: 200px
  
    
 }
@@ -318,19 +328,10 @@ article>footer{
     justify-content: center;
     text-align: center;
     background-color: var(--color-white);
-    width: 100%
+    width: 100%;
+    max-height: 200px;
 }
-.card1{
-    grid-column: 1/2;
-    grid-row: 2/3
-}
-.card2{
-    grid-column: 2/3;
-    grid-row: 2/3
-}.card3{
-    grid-column: 3/4;
-    grid-row: 2/3
-}
+
 .rating{ 
     grid-column: 4/5;
     padding: 10px
@@ -440,10 +441,10 @@ button{
     .color-choose input[type="radio"]#blue + label span {
     background-color : var(--color-accent1);
     }
-    .color-choose input[type="radio"]#black + label span {
+    .color-choose input[type="radio"]#orange + label span {
     background-color : var(--color-accent2);
     }
-    .color-choose input[type="radio"]#red + label span {
+    .color-choose input[type="radio"]#purple + label span {
         background-color : var(--color-main3);
         }
     .color-choose input[type="radio"]:checked + label span {
@@ -471,7 +472,7 @@ button{
     text-decoration : none;
     padding : 12px 30px;
     transition : all 0.5s;
-    font: var(--paragraph-font)
+    font-family: var(--paragraph-font)
     }
     .cart-btn:hover {
     background-color : var(--color-main3);
