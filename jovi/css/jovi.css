@@ -9,8 +9,8 @@
     --color-accent3: #1d2349;
     --color-accent4:#ceadd7;
     --color-white: white;
-    --heading-font: 'Abril Fatface', cursive;
-    --paragraph-font: 'Noto Sans JP', sans-serif;
+    --heading-font: 'Abril Fatface', cursive, serif;
+    --paragraph-font: 'Noto Sans JP', helvetica, sans-serif;
     
 }
 @media screen and (max-width: 550px) {
@@ -367,7 +367,7 @@ button{
     .left-column {
     width : 50%;
     position : relative;
-
+   
     }
     .right-column {
     width : 50%;
@@ -380,6 +380,8 @@ button{
     top : 0;
     opacity : 0;
     transition : all 0.3s ease;
+    max-width: 400px;
+    margin-top: 80px
 
     }
     .firstshopimg{
@@ -469,6 +471,7 @@ button{
     text-decoration : none;
     padding : 12px 30px;
     transition : all 0.5s;
+    font: var(--paragraph-font)
     }
     .cart-btn:hover {
     background-color : var(--color-main3);
