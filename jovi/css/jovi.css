@@ -273,7 +273,7 @@ input[type=text], select, textarea, input[type=email] {
       height: auto;
   }
   .sciencesection1>h2{
-      size: 5rem;
+     
       padding: 1rem
   }
   .sciencesection2>h2{
@@ -300,7 +300,7 @@ input[type=text], select, textarea, input[type=email] {
   }
 article{
     display: grid; 
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr .5fr;
     width: 100%;
     box-shadow: 1px 1px 4px 1px #888;
     border-radius: 3px;
@@ -315,7 +315,8 @@ article{
 article>img{
     grid-row: 1/2
 }
-article>p{
+.quote{
+    
     grid-row: 2/3;
     align-items: center
 }
