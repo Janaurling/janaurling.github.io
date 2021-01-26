@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Applied Scripture</title>
+<script>
+
+function applyScripture() {
+
+    let name = document.getElementById('nameInputBox').value;
+
+    let scripture = "Doctrine and Covenants 50:41 Fear not, little " + name + ", for you are mine, and I have overcome the world, and you are of them that my Father hath given me;";
+    document.getElementById('outputDiv').innerHTML = scripture;
+}
+</script>
+</head>
+
+<body>                             
+Please enter your name: <input type="text" id="nameInputBox">    
+<button type="button" onclick="applyScripture()">Verse</button>
+<div id="outputDiv"></div>
+</body>       
+</html>
