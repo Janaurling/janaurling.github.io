@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Convert Quarts to Litres</title>
+
+<script>
+function quartolit() {
+    let text = document.getElementById('quartsInputBox').value;
+    let c = parseFloat(text);
+    let f = c /1.057
+    document.getElementById('LitreDiv').innerHTML = f;
+}
+</script>
+</head>
+
+<body>   
+    <h1>Convert Quarts to Litres</h1>                            
+Enter a volume in quarts: <input type="text" id="quartsInputBox">
+<button type="button" onclick="quartolit()">Convert</button>
+<div id="LitreDiv"></div>                     
+</body>            
+</html>

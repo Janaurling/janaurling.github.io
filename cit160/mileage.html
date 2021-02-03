@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Calculate Mileage</title>
+
+<script>
+function mileage() {
+    let begin = document.getElementById('beginningodom').value;
+    let a = parseFloat(begin);
+
+    let end = document.getElementById('endingodom').value;
+    let b = parseFloat(end);
+
+    let gas = document.getElementById('gasoline').value;
+    let c = parseFloat(gas);
+    let f = (b-a)/c
+    document.getElementById('mileagediv').innerHTML = f;
+}
+</script>
+</head>
+
+<body>   
+    <h1>Calculate Mileage</h1>                            
+Enter beginning odometer reading: <input type="text" id="beginningodom">
+</br>
+Enter ending odometer reading: <input type="text" id="endingodom">
+</br>
+Enter gallons of gas used: <input type="text" id="gasoline">
+<button type="button" onclick="mileage()">Convert</button>
+<div id="mileagediv"></div>                     
+</body>            
+</html>
