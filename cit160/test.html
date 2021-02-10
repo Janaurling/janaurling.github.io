@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Rate of Change</title>
+<script>
+function computeRateOfChange() {
+    let pp = document.getElementById('prevPrice').value;
+    let a = parseFloat(pp);
+
+    let cp = document.getElementById('currPrice').value;
+    let b = parseFloat(cp);
+
+    let c = (b-a)/a
+    document.getElementById('rate').innerHTML = c;
+}
+</script>
+</head>
+
+<body>
+    <h1>Rate of Change</h1>
+    Previous Price <input type="text" id="prevPrice"><br>
+    Current Price <input type="text" id="currPrice"><br>
+    <button type="button" onclick="computeRateOfChange()">Rate of Change</button><br>
+    Rate of Change <div id="rate"></div>
+</body>
+</html>

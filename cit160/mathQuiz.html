@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Check</title>
+</head>
+
+<body>
+    <h1>Test Your Math Skills!</h1>
+    <input type="text" id="abox">
+    <input type="text" id="operatorbox">
+    <input type="text" id="bbox">
+    =
+    <input type="text" id="solutionbox">
+    <br />
+    <button type="button" onclick="mathcheck()">Check</button>
+    <div id="answer"></div>
+    <script>
+        function mathcheck() {
+            var a = parseFloat(document.getElementById('abox').value);
+            var operator = document.getElementById('operatorbox').value;
+            var b = parseFloat(document.getElementById('bbox').value);
+            var c = parseFloat(document.getElementById('solutionbox').value);
+            var result;
+            var correct;
+
+            if (operator == "+") {
+                result = a + b;
+            } else if (operator == "-") {
+                result = a - b;
+            } else if (operator == "*") {
+                result = a * b;
+            } else if (operator == "/") {
+                result = a / b;
+            }
+
+            if (result == c) {
+                correct = "Correct! Good job.";
+            } else {
+                correct = "Incorrect. Try again!"
+            }
+            document.getElementById('answer').innerHTML = correct;
+        }
+    </script>
+</body>
+
+</html>

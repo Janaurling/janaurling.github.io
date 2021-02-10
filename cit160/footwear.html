@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear</title>
+</head>
+<body>
+    What's the weather like? <input type="text" id="weather">
+</br>
+<button type="button" onclick="footwear()">Find the best shoes!</button>
+<div id="shoe"></div>
+<script>
+    function footwear(){
+        var shoe;
+switch (document.getElementById('weather').value){
+                case 'hot':
+                    shoe = "sandals";
+                    break;
+                case 'rain':
+                    shoe = "galoshes";
+                    break;
+                case 'snow':
+                    shoe = "boots";
+                    break;
+                default:
+                    shoe = "shoes";
+    }
+    document.getElementById('shoe').innerHTML = shoe;
+}
+</script>
+</body>
+</html>

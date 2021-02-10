@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Jesus Tortolero">
+<title>Test Your Math Skills</title>
+
+<script>
+/* Input:  Enter 2 numbers, an arithmetic operator (+, -, *, or /), and a result.
+ * Processing: determine which operator is being used, and check the equation.
+ * Output: whether or not the equation is correct.
+ *    
+ *    
+ */
+function TestMath() {
+    // Get 2 numbers a and b, operator, and result c.
+    // for an arithmetic test from the user.
+    var a = parseFloat(document.getElementById('aInputBox').value);
+    var operator = document.getElementById('operatorInputBox').value;
+    var b = parseFloat(document.getElementById('bInputBox').value);
+    var c = parseFloat(document.getElementById('cInputBox').value);
+    //Computed result to compare with c
+    var result;
+    //if correct, value is "Correct! Good job.". If incorrect, value is "Incorrect. Try again!".
+    var correct;
+
+    if (operator == "+") {
+        result = a + b;
+    } else if (operator == "-") {
+        result = a - b;
+    } else if (operator == "*") {
+        result = a * b;
+    } else if (operator == "/") {
+        result = a / b;
+    }
+
+    if (result == c){
+        correct = "Correct! Good job.";
+    }
+    else{
+        correct = "Incorrect. Try again!"
+    }
+    
+
+    // Tell the user if they are correct.
+    document.getElementById('outputDiv').innerHTML = correct;
+}
+</script>
+</head>
+
+<body>
+    <h1>Test Your Math Skills</h1>
+    <input type="text" id="aInputBox" size="2">
+    <input type="text" id="operatorInputBox" size="2">
+    <input type="text" id="bInputBox" size="3"> =
+    <input type="text" id="cInputBox" size="3">
+    <br><br>
+<button type="button" onclick="TestMath()">Check</button>
+<div id="outputDiv"></div>
+</body>
+</html>
