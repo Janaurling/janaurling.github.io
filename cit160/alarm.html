@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Alarm</title>
+
+<script type="text/javascript">
+
+function sleepIn() {
+
+	var now = new Date();
+    var month = now.getMonth();
+    var dayOfMonth = now.getDate();
+    var dayOfWeek = now.getDay();
+	var newYearsDay = now.getMonth(1) && now.getDate(1);
+	var independenceDay = now.getMonth(7) && now.getDate(4);
+	var Christmas = now.getMonth(12) && now.getDate(25);
+	var holiday;
+
+    if (dayOfWeek == 0 || dayOfWeek == 6) {
+		message = "Sleep in." ;
+		}
+		else if(holiday == (newYearsDay || independenceDay) || Christmas){
+		message = "Sleep in." ;
+		}
+		else{
+		message = "Get up!"
+		}
+
+
+	var div = document.getElementById ('output');
+	div.innerHTML = message;
+}
+</script>
+</head>
+
+<body>  
+<h1> Should I sleep in?</h1>                    
+
+</br>
+<button type="button" onclick="sleepIn()">???</button>
+<div id="output"></div>              
+</body>         
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+</head>
+<body>
+
+    Please enter your subtotal: <input type="text" id="subtotal" ><br>  
+<button type="button" onclick="discountcalc()">Calculate Total</button>  
+<div id="output"></div>  
+<div>
+</div>
+    <script>
+        function discountcalc () {
+            var dayOfWeek = new Date().getDay();
+            var subtotal = parseFloat(document.getElementById('subtotal').value);
+            var discount;
+
+        
+            if (dayOfWeek==2 ^ subtotal>50)  {
+                output = (subtotal*.90)*1.06
+            }
+            else if (dayOfWeek==3 ^ subtotal>50)  {
+                output = (subtotal*.90)*1.06
+            }
+            else {
+                output = subtotal*1.06
+            }
+
+            document.getElementById('output').innerHTML = group;
+        }
+    </script>
+</body>
+</html>

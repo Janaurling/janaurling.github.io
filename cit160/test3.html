@@ -2,30 +2,35 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title>Volume of a Torus</title>
+<title>Alarm</title>
 <script>
-
-function computeVolume() {
-    let alpha = document.getElementById('inner').value;
-    let a = parseFloat(alpha);
-
-    let beta = document.getElementById('outer').value;
-    let b = parseFloat(beta);
-    let c = (a+b);
-    let e = Math.pow(Math.PI,2);
-    let f = Math.pow((a-b),2);
-    let g = (e*c*f)/4;
-    document.getElementById('volume').innerHTML = g;
-}
-
+/*
+ * Input: Computer's clock & user click
+ * Processing: Check for Non-holiday weekdays (M-F) vs holidays (Jan 1, July 4, Dec 25)
+ * Output: Whether or not you can sleep in - Non-holiday weekdays (M-F) "Get up!"; else: "Sleep in."
+ */
+function sleepIn() {
+var now = new Date();
+var month = now.getMonth();
+var dayOfMonth = now.getDate();
+var dayOfWeek = now.getDay();
+var alarm;
+if (month == 0 && dayOfMonth == 1 || month == 6 && dayOfMonth == 4 || month == 11 && dayOfMonth == 25) {
+alarm = "Sleep in.";
+ }
+else if (dayOfWeek == 0 || dayOfWeek == 6) {
+alarm = "Sleep in.";
+ }
+else {
+alarm = "Get up!";
+ }
+document.getElementById("AlarmMessage").innerHTML = "<br>" + alarm;
+ }
 </script>
 </head>
-
 <body>
-    <h1>Volume of a Torus</h1>
-    Inner radius <input type="text" id="inner"><br>
-    Outer radius <input type="text" id="outer"><br>
-    <button type="button" onclick="computeVolume()">Volume</button><br>
-    Volume <div id="volume"></div>
+<h1>Alarm</h1>
+<button type="button" onclick="sleepIn()">Can you sleep in today?</button>
+<div id="AlarmMessage"></div>
 </body>
 </html>
