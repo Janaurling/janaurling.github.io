@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What are the odds?</title>
+</head>
+
+<body>
+
+    <body>
+        <h1>What's the sum of the odds?</h1>
+        <br />Enter a positive number <input type="text" id="input">
+        <button type="button" onclick="additup()">Find the sum!</button>
+        <div id="addodds"></div>
+        <script>
+            /*Defining Table
+            *Input: user enters a positive integer (n)
+            *processing: calculate the sum of the odd numbers from 0 to n
+            *output: give the sum of odd numbers
+            */
+            function additup() {
+                var n = parseInt(document.getElementById("input").value)
+                var addodds
+
+                if (n > 0) {
+                    total = 0;
+                    for(i = 1; i <= n; i++) {
+                        if (i % 2 == 1)
+                            total += i;
+                    }
+                }
+                document.getElementById('addodds').innerHTML = total;
+            }
+
+        </script>
+    </body>
+
+</html>

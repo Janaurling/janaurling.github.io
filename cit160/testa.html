@@ -1,113 +1,134 @@
+
 <!DOCTYPE HTML>
 
-<html lang="en-us">
+
+<html lang="en-US">
+
+
+
 
 <head>
 
+
+
+
 <meta charset="utf-8">
 
-<title>Math Quiz</title>
+
+<title>Title</title>
+
+
+
 
 <script>
 
-/* Input: The numbers
 
-     
 
- * Processing: Process if the result is correct 
 
-      
+function sumOdds() {
 
- * Output: Message that informs if the result is correct or not 
 
- */
+  /*Defining Table
 
-function mathquiz() {
+  * Input: integer (n)
 
-               
+  * Processing: Calculate the sum of all odd integers between 1 and n, inclusive
 
-                
+  * Output: The above sum.
 
-                let one = parseInt(document.getElementById("one").value);
+  */
 
-                let two = parseInt(document.getElementById("two").value);
 
-                let mathoperator = document.getElementById("mathoperator").value;
 
-                let answer = parseInt(document.getElementById("Answer").value);
 
-                let result =0;
+  var n = parseInt(document.getElementById('n').value);
 
-                
 
-                if (mathoperator == "+") {
+  var i = 1;
 
-                    result = one + two;
 
-                } 
+  var count = 0;
 
-                else if (mathoperator == "-") {
 
-                         result = one - two;
+  while (i <= n) {
 
-                } 
 
-                else if (mathoperator == "*") {
+    if (i % 2 != 0) {
 
-                         result = one * two;
 
-                } 
+      count += i;
 
-                else if (mathoperator == "/") {
 
-                         result = one / two;
+      i++
 
-                }
 
-                let correct;
+    } else {
 
-                if (result == answer) {
 
-                    correct = "Correct! Good job.";
-
-                } 
-
-                else {
-
-                    correct = "Incorrect. Try again!";
-
-                }
-
-                
-
-                document.getElementById("mathquiz").innerHTML = correct;
-
-                
+      i++;
 
     }
 
+  } 
+
+
+
+
+  document.getElementById('sum').innerHTML = count;
+
+}
+
+
+
+
 </script>
+
+
+
+
+<style>
+
+
+  body {
+
+
+    max-width: 500px;
+
+
+    margin: auto;
+
+  }
+
+
+</style>
+
+
+
 
 </head>
 
+
+
+
 <body>
 
-    <h1>Test Your Math Skills!</h1>
 
-    
+<input type="text" id="n" placeholder="Enter a #">
 
-    <input type="text" name="one" id="one" /> 
 
-    <input type="text" id="mathoperator" name="mathoperator" />
+<button type="button" onclick="sumOdds()">Submit</button>
 
-    <input type="text" name="two" id="two" /> =
 
-    <input type="text" name="Answer" id="Answer" />  
 
-    <button type="button" onclick="mathquiz()">Result</button>
 
-    <div id="mathquiz"></div>
+<div id="sum" style="border: 2px solid black; border-radius:10px; 15px; padding:10px; width:200px; text-align:center;"></div>
+
+
+
 
 </body>
+
+
+
 
 </html>
