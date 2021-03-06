@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script>
+/* Input: user enters two integers 
+ * Processing: evaluates if both numbers are greater than 5, or if their sum is greater than 20
+ * Output: if the conditions are met the program will read true, otherwise the result will be false
+ */
+function evaluate(){
+ let one = parseFloat(document.getElementById('one').value);
+ let two = parseFloat(document.getElementById('two').value);
+ let result 
+ let total = (one+two)
+ if ((one > 5 && two > 5) || (total > 5)){
+        result = 'true'
+    }
+    
+    else {
+        result = 'false';
+    }
+
+    document.getElementById('output').innerHTML = result;
+}
+</script>
+</head>
+
+<body>
+Please enter two numbers:
+<input type="text" id="one" size="5">
+<input type="text" id="two" size="5">
+<button type="button" onclick="evaluate">Click</button>
+<div id="output"></div>
+</body>
+</html>

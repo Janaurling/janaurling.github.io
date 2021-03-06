@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE HERE</title>
+    <script>
+        /*
+         *Input: 
+         *Processing: 
+         *Output:
+         */
+        function changeMe() {
+            let x = document.getElementById("input1").value;
+            let y = document.getElementById("input2").value;
+            let message = "Welcome";
+            if (x < 2) {
+                if (y > 10) {
+                    message = "Hello";
+                }
+            } else {
+                message = "Goodbye";
+            }
+            document.getElementById('output').innerHTML = message;
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    Input 1<input type="text" id="input1">
+    INput 2<input type="text" id="input2">
+    <button type="button" onclick="changeMe">This is a button</button>
+    <div id="output"></div>
+    </div>
+</body>
+
+</html>

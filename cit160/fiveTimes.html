@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>5 Times Table</title>
+    <script type="text/javascript">
+        /* 
+         Input: There will be no user input
+         Process: Define all the 5 times table between 1 and 12.
+         Output: The 5 times table will be displayed.
+         */
+        function fiveTimesTable() {
+            var display = ""; 
+
+            for (i = 1; i <= 12; i++) {
+                var multiplier = 5;
+                var result = i * 5;
+
+                display += multiplier + " * " + i + " = " + result + "<br>"; 
+
+            document.getElementById("outputDiv").innerHTML = display;
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <h1>Five Times Table From 1 - 12.</h1>
+    <button type="button" onclick="fiveTimesTable()">Display Times Table</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>
