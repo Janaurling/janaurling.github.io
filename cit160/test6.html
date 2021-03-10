@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script>
+/* Input: user enters three integers labelled : start, end and divisor 
+ * Processing: program will find all the integers between start and end, inclusive, that are evenly divisible by divisor
+ * Output: integers are displayed 
+ */
+function dividingTool(){
+    let a = document.getElementById('start').value;
+    let b = document.getElementById('end').value;
+    let c = document.getElementById('divisor').value;
+    total = ""
+    for (i=a; i<=b; i++){
+    if((i%c) == 0){ 
+        total += i + " "
+    }
+}
+
+
+    document.getElementById('output').innerHTML = total;
+}
+
+</script>
+</head>
+
+<body>
+Start: <input type="text" id="start" size="5"><br>
+End: <input type="text" id="end" size="5"><br>
+Divisor: <input type="text" id="divisor" size="5"><br>
+<button type="button" onclick="dividingTool()">display numbers evenly divisible by the divisor</button>
+<div id="output"></div>
+</body>
+</html>
