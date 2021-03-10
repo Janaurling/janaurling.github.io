@@ -1,27 +1,42 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
+
 <head>
-<meta charset="utf-8">
-<title>Rate of Change</title>
-<script>
-function computeRateOfChange() {
-    let pp = document.getElementById('prevPrice').value;
-    let a = parseFloat(pp);
+    <meta charset="utf-8">
+    <meta name="author" content="Carol Anderson">
+    <title>Weather</title>
+    <script>
+        /* Input: User puts in two inputs, temperature and wind speed.  
+         * Processing: Program will calculate the wind chill factor with the inputs.
+         * Output: Program will return the windchill in Fahrenheit.
+         */
 
-    let cp = document.getElementById('currPrice').value;
-    let b = parseFloat(cp);
+        function doInputOutput() {
+            let tempF = parseFloat(document.getElementById("temperature").value);
+            let speed = parseFloat(document.getElementById("windSpeed").value);
+            let result = windChill(tempF, speed);
 
-    let c = (b-a)/a
-    document.getElementById('rate').innerHTML = c;
-}
-</script>
+            document.getElementById("output").innerHTML = "The windchill is " + result.toFixed(2) + "."
+        }
+
+        /*Input: Two numbers
+        * Processes: through the equation
+        * Output: Result
+        */
+
+        function windChill(num1, num2) {
+            return 35.74 + (0.6215 * num1) - (35.75 * (Math.pow(num2, 0.16))) + (0.4275 * num1 * (Math.pow(num2, 0.16)));
+
+        }
+    </script>
 </head>
 
 <body>
-    <h1>Rate of Change</h1>
-    Previous Price <input type="text" id="prevPrice"><br>
-    Current Price <input type="text" id="currPrice"><br>
-    <button type="button" onclick="computeRateOfChange()">Rate of Change</button><br>
-    Rate of Change <div id="rate"></div>
+    Enter the temperature in Fahrenheit: <input type="text" id="temperature"><br>
+    Enter the wind speed: <input type="text" id="windSpeed"><br>
+
+    <button type="button" onclick="doInputOutput()">Wind Chill</button>
+    <div id="output"></div>
 </body>
+
 </html>

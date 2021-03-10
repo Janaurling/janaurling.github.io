@@ -6,27 +6,28 @@
     <title>TITLE HERE</title>
     <script>
         /*
-        *Input: 
-        *Processing: 
-        *Output:
+        *Input: user will enter temperature and windspeed
+        *Processing: program will calculate windchill 
+        *Output: windchill will be displayed
         */
        function doinputoutput(){
-           let t=parsefloat(document.getElementById("temperature").value);
-           let s=parsefloat(document.getElementById("windspeed").value);
-           let output=windchill(temperature, windspeed)
+           let t=parseFloat(document.getElementById("temperature").value);
+           let s=parseFloat(document.getElementById("windspeed").value);
+           let output=windchill(t, s)
            document.getElementById('final').innerHTML = output;
 
        }
-       function windchill(){
-        let wc = 35.74 + (0.6215*t) - (35.75*Math.pow(s,0.16)) + 0.4275*t*Math.pow(s,0.16)
+       function windchill(t, s){
+        let wc = 35.74 + (0.6215*t) - (35.75*Math.pow(s,0.16)) + 0.4275*t*Math.pow(s,0.16);
+        return wc;
        }
     </script>
 </head>
 <body>
 
-    Temperature: <input type="text" id="temperature"></br>
-    Windspeed: <input type="text" id="windspeed">
-    <button type="button" onclick="doinputoutput">Calculate</button>
+    Temperature in fahrenheit : <input type="text" id="temperature"></br>
+    Windspeed in miles per hour : <input type="text" id="windspeed">
+    <button type="button" onclick="doinputoutput()">Calculate</button>
     <div id="final"></div>
     </div>
 </body>
