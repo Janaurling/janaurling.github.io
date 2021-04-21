@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array1</title>
+    <script>
+        /* Defining Table
+         * Input: no user input
+         * Processing: calls the getLast function to get last number in each array
+         * Output: the value is displayed 
+         */
+        function test() {
+            let list1 = [-3, 0, 7.1, 5];
+            let list2 = [17, 8, 9, 5, 20];
+            let list3 = [5, -2.1, 6.3, 9, 5, 13]
+
+        
+            let last1 = getLast(list1);
+            let last2 = getLast(list2);
+            let last3 = getLast(list3);
+
+            let output =
+                last1 + '<br>' +
+                last2 + '<br>' +
+                last3 + '<br>' ;
+
+
+            document.getElementById('output').innerHTML = output;
+        }
+
+        function getLast(list) {
+            let l = list[list.length - 1]
+            return l
+
+            
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button type="button" onclick="test()">Display Last</button>
+    <div id="output"></div>
+    </div>
+</body>
+
+</html>

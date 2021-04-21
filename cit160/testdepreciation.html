@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Names</title>
+    <script>
+        /* Defining Table
+         * Input: user enters start value, end value, and number of months owned
+         * Processing: depreciation is calculated  
+         * Output: depreciation is displayed
+         */
+        function getValues() {
+            let s= parseFloat(document.getElementById("startValue").value);
+            let e= parseFloat(document.getElementById("endValue").value);
+            let m= parseFloat(document.getElementById("months").value);
+
+            let final = depreciation(s, e, m)
+            document.getElementById('output').innerHTML = final;
+
+        }
+
+        function depreciation(s, e, m) {
+            let d= (s-e)/m
+            return d
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    Start Value: <input type="text" id="startValue">
+    End Value: <input type="text" id="endValue">
+    Months: <input type="text" id="months">
+    <button type="button" onclick="getValues()">calculate depreciation</button>
+    <div id="output"></div>
+    </div>
+</body>
+
+</html>

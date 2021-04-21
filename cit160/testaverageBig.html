@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Average Big</title>
+        <script>
+            /* Defining Table
+             * Input: no user input
+             * Processing: calculates the average of all the numbers stored in the array that are larger than 1000
+             * Output: the value is displayed 
+             */
+            function test() {
+                let list1 = [70, 1010, 950, 2014, 6];
+                let list2 = [-72.3, 3000, 873, 2312, 68, 7501.3];
+                let list3 = [70, 950, 671, 6]
+    
+            
+                let ab1 = averageBig(list1);
+                let ab2 = averageBig(list2);
+                let ab3 = averageBig(list3);
+    
+                let output =
+                    ab1 + '<br>' +
+                    ab2 + '<br>' +
+                    ab3 + '<br>' ;
+    
+    
+                document.getElementById('output').innerHTML = output;
+            }
+    
+            function averageBig(list) {
+                for (var i = 0; i < list.length; ++i) {
+            if ((list[i]) > 1000) {
+               sum+=i
+            }
+
+        }
+        return sum
+
+
+    }
+            
+    
+        </script>
+    </head>
+    
+    <body>
+    
+        <button type="button" onclick="test()">Display Average</button>
+        <div id="output"></div>
+        </div>
+    </body>
+    
+    </html>

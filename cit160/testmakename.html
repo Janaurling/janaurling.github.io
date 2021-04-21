@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Names</title>
+    <script>
+        /* Defining Table
+         * Input: user enters first and last name of president
+         * Processing: puts the name in proper order 
+         * Output: full name is displayed
+         */
+        function getName() {
+            let a= document.getElementById("givenName").value;
+            let b= document.getElementById("familyName").value;
+            let final = makeFullName(a,b)
+            document.getElementById('output').innerHTML = final;
+
+        }
+
+        function makeFullName(a, b) {
+            let name = b + ", " + a
+            return name
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    Given Name: <input type="text" id="givenName">
+    Family Name; <input type="text" id="familyName">
+    <button type="button" onclick="getName()">give name</button>
+    <div id="output"></div>
+    </div>
+</body>
+
+</html>
