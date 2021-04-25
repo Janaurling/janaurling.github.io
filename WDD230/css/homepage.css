@@ -8,7 +8,7 @@
     --accent2-color: rgba(168, 83, 91);
     --white-color: rgba(255, 255, 255); 
     --heading-font: 'Spartan', sans-serif;
-    --paragraph-font: 'Abril Fatface', serif;
+    --paragraph-font:  serif;
 }
 
 html {
@@ -39,16 +39,21 @@ h6 {
     color: var(--accent1-color)}
 
 header {
+
     padding: 1em;
     text-align: center;
     color: white;
     background-color: var(--third-color)
 }
 
+header img{
+    float: right
+}
 p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
-    padding: 1em
+    margin: .3rem 0rem;
+
 }
 
 p, 
@@ -73,24 +78,8 @@ h6, a:visited {
 }
 
 
-nav { 
-    background-color: var(--accent2-color) ;
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em
-}
-
-nav a:link,
-nav a:visited {
-    color: var(--accent1-color)
-}
-
-nav a:hover {
-    color: var(--secondary-color);
-    background-color:var(--accent1-color)
-}
 footer {
     color: var(--accent1-color);
     background-color:var(--secondary-color);
-    padding: 20px
+    padding: 1rem
 }
