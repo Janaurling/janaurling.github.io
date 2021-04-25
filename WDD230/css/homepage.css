@@ -83,3 +83,9 @@ footer {
     background-color:var(--secondary-color);
     padding: 1rem
 }
+footer a:visited {
+    color: black
+}
+footer a:link {
+    color: black
+}
