@@ -15,7 +15,6 @@
 
 body{
     max-width: 1050px;
-    min-height: 60rem;
     margin: auto;
     background-color: var(--white-color);
     padding: 1em;
