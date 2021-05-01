@@ -1,0 +1,76 @@
+
+:root {
+    --primary-color: rgba(200, 203, 184);
+    --secondary-color:  rgba(238, 241, 224);
+    --third-color: rgba(225, 227, 216);
+    --fourth-color: rgba(246, 248, 237);
+    --accent1-color: rgba(178, 195, 179);
+    --accent2-color: rgba(129, 146, 132);
+    --accent3-color: rgba(67, 67, 67);
+    --white-color: rgba(255, 255, 255); 
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Noto Serif' serif;
+}
+
+
+body{
+    max-width: 1050px;
+    min-height: 60rem;
+    margin: auto;
+    background-color: var(--white-color);
+    padding: 1em;
+    font-family: var(--paragraph-font);
+    background: var(--fourth-color);
+
+    position: relative;
+
+}
+h1{
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    padding: 1rem;
+    text-align:  center;
+}
+h2{
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    background-color: var(--white-color);
+    padding:1rem;
+    margin:0;
+}
+h3{
+    color: var(--accent3-color);
+    font-family: var(--paragraph-font);
+    padding:1rem;
+    margin:0;
+}
+img{
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 700px;
+
+}
+main{
+display: block;
+    max-width: 100%;
+    
+}
+p{
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+}
+footer{
+    background-color: var(--white-color);
+    padding: 1rem
+}
+
+.section1{
+    background-color: var(--third-color);
+
+}
+.section2{
+    background-color: var(--third-color);
+}
+.section3{
+    background-color: var(--third-color);
+}
