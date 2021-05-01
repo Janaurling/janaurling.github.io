@@ -17,8 +17,9 @@ html {
 
 body {
     max-width: 900px;
+    min-height: 60rem;
     margin: 0 auto;
-    background-color:rgba(255, 255, 255);
+    background-color: var(--white-color);
     padding: 1em
 }
 
@@ -47,7 +48,8 @@ header {
 }
 
 header img{
-    float: right
+    border-radius: 10px;
+
 }
 p {
     font-family: var(--paragraph-font);
@@ -81,11 +83,14 @@ h6, a:visited {
 footer {
     color: var(--accent1-color);
     background-color:var(--secondary-color);
-    padding: 1rem
+    padding: 1rem;
+    position:fixed;bottom:0;left:0;right:0;
+
 }
 footer a:visited {
     color: black
 }
 footer a:link {
-    color: black
+    color: black;
+
 }
