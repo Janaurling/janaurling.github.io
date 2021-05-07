@@ -5,7 +5,7 @@
     --third-color: rgba(247, 37, 133);
     --fourth-color: rgba(114, 9, 183);
     --accent1-color: rgba(224, 255, 252);
-    --accent2-color: rgba(129, 146, 132);
+    --accent2-color: rgba(222, 177, 251);
     --accent3-color: rgba(67, 67, 67);
     --white-color: rgba(255, 255, 255); 
     --black-color: rgba(0,0,0);
@@ -23,12 +23,12 @@ body{
 
 }
 h1{
-    color: var(--white-color);
+    color: var(--secondary-color);
     font-family: var(--heading-font);
     margin: 0;
     padding: 1rem;
     text-align:  center;
-    background-color: var(--fourth-color);
+    background-color: var(--accent2-color);
 }
 h2{
     color: var(--fourth-color);
