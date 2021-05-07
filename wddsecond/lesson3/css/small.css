@@ -5,11 +5,11 @@
     --third-color: rgba(247, 37, 133);
     --fourth-color: rgba(114, 9, 183);
     --accent1-color: rgba(224, 255, 252);
-    --accent2-color: rgba(222, 177, 251);
+    --accent2-color: rgba(239, 216, 253);
     --accent3-color: rgba(67, 67, 67);
     --white-color: rgba(255, 255, 255); 
     --black-color: rgba(0,0,0);
-    --heading-font: 'Anton', sans-serif;
+    --heading-font: 'Comfortaa', sans-serif;
     --paragraph-font: 'Roboto' serif;
 }
 
@@ -28,7 +28,7 @@ h1{
     margin: 0;
     padding: 1rem;
     text-align:  center;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 h2{
     color: var(--fourth-color);
