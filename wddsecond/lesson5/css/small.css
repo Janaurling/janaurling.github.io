@@ -122,6 +122,10 @@ nav a:active {
     text-decoration: underline var(--third-color); 
     text-decoration-thickness: .25rem;
 }
+nav ul li.active a {
+    text-decoration: underline var(--third-color); 
+    text-decoration-thickness: .25rem;
+}
 nav>ul {
     list-style-type: none;
 
