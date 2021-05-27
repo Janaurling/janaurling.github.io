@@ -1,0 +1,210 @@
+
+:root {
+    --primary-color: rgba(46, 196, 182);
+    --secondary-color:  rgba(58, 12, 163);
+    --third-color: rgba(247, 37, 133);
+    --fourth-color: rgba(114, 9, 183);
+    --accent1-color: rgba(240, 250, 250);
+    --accent2-color: rgba(239, 216, 253);
+    --accent3-color: rgba(67, 67, 67);
+    --white-color: rgba(255, 255, 255); 
+    --black-color: rgba(0,0,0);
+    --heading-font: 'Comfortaa', sans-serif;
+    --paragraph-font: 'Roboto', serif;
+}
+
+
+body{
+
+    margin: auto;
+    background-color: var(--white-color);
+    font-family: var(--paragraph-font);
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+h1{
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin: 0;
+    padding: 1rem;
+    text-align:  center;
+
+}
+h2{
+    color: var(--fourth-color);
+    font-family: var(--heading-font);
+    padding:1rem;
+    margin:0;
+}
+h3{
+    color: var(--third-color);
+    font-family: var(--heading-font);
+    padding:1rem;
+    margin:0;
+}
+img{
+
+    width:100%;
+}
+header{
+    background-color: var(--white-color);
+    padding-top:1rem;
+    align-items: center;
+    justify-content: center;
+display: flex
+}
+header h1{
+    grid-row: 1/2;
+    padding: 0;
+}
+header h2{
+text-align: center; 
+color: var(--third-color);
+padding: 0;
+padding-bottom:.5rem;
+}
+
+header>img{
+    float: center;
+    width: 100%
+}
+
+main{
+display: block;
+    max-width: 100%;
+    margin: auto;
+
+    
+}
+p{
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+    margin: 0;
+}
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: grid;
+
+    max-width: 1018px;
+    margin :auto
+}
+footer img{
+    padding: 1rem
+}
+
+nav{
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-family: var(--heading-font);
+ 
+}
+nav a:hover {
+    background-color: var(--white-color);
+    text-decoration: none;
+
+}
+nav a:link,
+nav a:visited {
+    color: var(--secondary-color);
+    text-decoration: none;
+
+  }
+
+nav a:active {
+    text-decoration: underline var(--third-color); 
+    text-decoration-thickness: .25rem;
+}
+nav ul li.active a {
+    text-decoration: underline var(--third-color); 
+    text-decoration-thickness: .25rem;
+}
+nav>ul {
+    list-style-type: none;
+
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1050px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left:0;
+    padding-right:0;
+    margin: 0;
+    flex-flow: column; 
+    align-items: center; 
+    justify-content: center;
+
+}
+li { 
+    padding: .3rem
+
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: auto
+  }
+
+
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li{
+    display: none
+}
+
+.responsive li {
+	display: block;
+}
+.forecastimages{
+    display: none;
+}
+.contact{
+    padding: 1rem
+}
+#banner{
+    background-color: var(--fourth-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: .5rem;
+    font-family: var(--paragraph-font);
+    display: none
+}
+
+.weathersummary p {
+    padding: 0;
+}
+
+.weathersummary{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr .5fr .5fr .5fr .5fr;
+    padding: .5rem;
+    max-width: fit-content;
+}
+.weathersummary .label{
+    display: block;
+    grid-column: 1/2;
+    text-align: right;
+
+}
+.weathersummary .value{
+    display: realative;
+    grid-column: 2/3;
+
+}
+.weathersummary h2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 0;
+}
