@@ -113,5 +113,10 @@
 	.navigation li:first-child {
 		display: none;
 	}
-   
+    .prestonheroimage img{
+        max-width: 1050px;
+    }
+    .prestonsection1{
+        max-height: fit-content;
+    }
 }

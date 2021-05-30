@@ -1,5 +1,4 @@
-let thedate = new Date();
 
-if(thedate.getDay() == 5){
+if(new Date().getDay() == 5){
     document.querySelector('#banner').style.display = 'block';
 }
