@@ -8,7 +8,8 @@
 function windchill(t, s){
 if (t <= 50 && s > 3) {
     let wc = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + 0.4275 * t * Math.pow(s, 0.16);
-} else {
+} 
+else {
     let wc = "N/A";
  return wc;
 }
