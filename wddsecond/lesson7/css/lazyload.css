@@ -11,7 +11,7 @@ body{
 }
 
 article img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.8em);
   }
   
   article img {
