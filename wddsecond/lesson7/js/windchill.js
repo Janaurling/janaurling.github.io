@@ -1,6 +1,6 @@
 
-    let t=parseFloat(document.querySelector("#temperature").value);
-    let s=parseFloat(document.querySelector("#windspeed").value);
+    let t=parseFloat(document.querySelector("#temperature").textContent);
+    let s=parseFloat(document.querySelector("#windspeed").textContent);
     let output=windchill(t, s)
     document.getElementById('windchill').innerHTML = output;
 
