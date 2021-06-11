@@ -1,0 +1,53 @@
+:root {
+    --datarow-color1: #e7f0ed;
+    --datarow-color2: #e7ffed ;
+    --primary-color: #628ca6;
+    --secondary-color: #7fb9c2;
+
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+table{
+    text-align: center;
+margin: auto;
+box-shadow: 10px 10px 10px var(--primary-color);
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid grey;
+    padding: .5em
+}
+thead th{
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+tbody th{
+    background-color: var(--primary-color);
+    color: white
+
+}
+tr:nth-child(5)>td:nth-child(3){
+    background-color: var(--primary-color);
+    color: white
+}
+tr:nth-child(6)>td:nth-child(1){
+    font-style: italic;
+}
+
+tfoot td{
+    background-color: var(--secondary-color);
+    font-size: .5rem;
+    padding: .5rem;
+}
+
+tr:nth-child(even) {
+    background-color: var(--datarow-color1);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--datarow-color2);
+}
