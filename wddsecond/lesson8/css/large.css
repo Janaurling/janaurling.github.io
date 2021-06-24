@@ -1,4 +1,4 @@
-@media only screen and (min-width: 56em){
+@media only screen and (min-width: 800px){
     .prestonpage{
    
 
@@ -36,5 +36,18 @@
         margin-right: 1rem;
         margin-top: 0;
     }
-
+    .homesection1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: black
+    }
+    .homeheroimage{
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+    .homearticle {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
