@@ -134,12 +134,10 @@ nav a:visited {
 
 nav a:active {
     text-decoration: underline var(--third-color);
-    text-decoration-thickness: .3px;
 }
 
 nav ul li.active a {
     text-decoration: underline var(--third-color);
-    text-decoration-thickness: 3px;
 }
 
 nav>ul {
@@ -224,7 +222,7 @@ td {
 }
 
 .weathersummary .value {
-    display: relative;
+
     grid-column: 2/3;
 
 }
