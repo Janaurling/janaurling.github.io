@@ -3,6 +3,7 @@
     --secondary-color: #27187E;
     --third-color:  #E47800;
     --fourth-color: #758BFD;
+    --fifth-color: #3A59FC;
     --accent1-color: #FF8600;
     --accent2-color: #D0D5FA;
     --accent3-color: #edeefd;
@@ -68,7 +69,7 @@ header h1 {
 
 header h2 {
     text-align: center;
-    color: var(--fourth-color);
+    color: var(--fifth-color);
     padding: 0;
     padding-bottom: .5rem;
     font-size: 1rem;

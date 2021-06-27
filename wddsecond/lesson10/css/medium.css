@@ -29,12 +29,13 @@
     }
     .weathersummary{
 
-        background-color: rgb(255,255,255,.5);
+        background-color: rgb(255,255,255,.7);
         z-index:2;
         position: absolute;
         width: 20rem;
         grid-row: 1/2;
-        margin: 1rem
+        margin: 1rem; 
+        border-radius:  4px;
     }
 
     .fivedayforecast{
