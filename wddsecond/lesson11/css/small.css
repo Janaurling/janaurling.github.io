@@ -387,16 +387,16 @@ button{
   grid-gap: .2rem;
 }
 .towncards section{
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     border-radius: 10px;
 
 }
 .towncards section p{
-  color: var(--fourth-color);
+  color: var(--secondary-color);
 
 }
 .towncards section h2{
-color: var(--white-color);
+color: var(--secondary-color);
 }
 .towncards img{
     border-radius: 10px;
@@ -447,4 +447,7 @@ hr{
 .pagearticle p{
     padding: 1rem
 
+}
+#citycode{
+    display: none
 }
