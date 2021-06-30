@@ -241,12 +241,10 @@ td {
 }
 
 .map {
-    max-width: 300px;
+    max-width: 200px;
 }
 
-.prestonsection1 {
-    margin: 1rem;
-}
+
 
 .gallery {
     display: grid;
@@ -267,11 +265,12 @@ article img {
 }
 
 article {
-    border: 1px solid var(--secondary-color);
+    border: 2px solid var(--accent1-color);
     border-radius: 3px;
     background-color: white;
     overflow: hidden;
     margin: 2rem;
+    color: var(--secondary-color)
 }
 
 form {
@@ -450,4 +449,14 @@ hr{
 }
 #citycode{
     display: none
+}
+.lastvisit{
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem; 
+    margin-bottom: 1rem;
+}
+footer a {
+    text-decoration: none;
 }

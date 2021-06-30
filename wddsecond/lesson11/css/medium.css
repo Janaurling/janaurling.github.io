@@ -16,7 +16,7 @@
    
     .prestonpage{
         display: grid;
-        grid-template-rows: 1fr .5fr 1fr;
+        grid-template-rows: .55fr .5fr 1fr;
         max-width: 1050px;
     }
     .prestonsection1{
