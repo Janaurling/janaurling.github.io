@@ -54,10 +54,9 @@
         <div class="formpage">
             <div class="yourinfo">
                 <h3>Your Info</h3>
-                <form action="thanks.html" method="GET">
-
+                <form method="get" action="thanks.html">
                     <label>Full Name: <em>(required)</em><br>
-                        <input type="text" name="full-name" pattern="[a-zA-Z]{5,}" placeholder="first and last name"
+                        <input type="text" name="full-name" placeholder="first and last name"
                             required>
                     </label><br>
                     <label>Email: <br>
@@ -78,11 +77,10 @@
                     <div class="dangerselection">
                         <label><input type="radio" name="danger" value="yes"> Yes</label>
                     </div>
-                </form>
+
             </div>
             <div class="storminfo">
                 <h3> Storm Info</h3>
-                <form>
                     <label>Storm Date:<br>
                         <input type="date" name="date" placeholder="mm/dd/yyyy">
                     </label><br>
@@ -136,7 +134,7 @@
                         <input type="textarea" name="comments" placeholder="Anything else we should know?">
                     </label><br>
                     <div class="submitbutton">
-                        <input type="submit" class="sbutton" value="Send My Storm Report" href="thanks.html"><br>
+                        <input type="submit" class="sbutton" value="Send My Storm Report"><br>
                       
                     </div>
                 </form>

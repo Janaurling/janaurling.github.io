@@ -312,7 +312,7 @@ input {
     font-family: var(--heading-font);
     color: var(--white-color);
     padding: .5rem;
-    max-width: 50%;
+    max-width: 70%;
 
 }
 .formpage{
