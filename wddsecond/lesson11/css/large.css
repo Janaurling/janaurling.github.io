@@ -10,11 +10,12 @@
     article:hover{
         box-shadow: 1px 1px 4px 1px #888;
     }
-    .formpage{
+    form {
         display: grid;
         grid-template-columns: 1fr 1fr;
     
     }
+
     .yourinfo{
         grid-column: 1/2;
     

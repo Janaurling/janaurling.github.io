@@ -273,14 +273,11 @@ article {
     color: var(--secondary-color)
 }
 
-form {
+fieldset {
     border: 1px solid var(--accent1-color);
     border-radius: 20px;
     padding: 1rem;
-
-}
-.formpage h3{
-    border: none
+    margin: 1rem
 }
 
 label,
@@ -296,6 +293,7 @@ input {
     border: 1px solid var(--fourth-color);
     box-shadow: 3px 4px 2px 1px var(--primary-color);
 }
+
 .dangerselection input{
     padding: 0;
     width: auto;
@@ -460,4 +458,13 @@ hr{
 }
 footer a {
     text-decoration: none;
+}
+
+.subscribe>input{
+
+
+        width: 100%;
+
+
+    
 }

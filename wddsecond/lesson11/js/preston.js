@@ -6,7 +6,7 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&&un
 fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => {
-  console.log(jsObject);
+  //console.log(jsObject);
  document.getElementById('temperature').textContent = jsObject.main.temp;
  document.getElementById('windspeed').textContent = jsObject.wind.speed;
  document.getElementById('humidity').textContent = jsObject.main.humidity;
