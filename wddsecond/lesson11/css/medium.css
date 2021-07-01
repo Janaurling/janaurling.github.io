@@ -16,7 +16,7 @@
    
     .prestonpage{
         display: grid;
-        grid-template-rows: .55fr .5fr 1fr;
+        grid-template-rows: .55fr .5fr 2fr;
         max-width: 1050px;
     }
     .prestonsection1{
@@ -29,7 +29,7 @@
     }
     .weathersummary{
 
-        background-color: rgb(255,255,255,.7);
+        background-color: rgb(255,255,255,.8);
         border: 2px solid var(--accent1-color);
         z-index:2;
         position: absolute;
