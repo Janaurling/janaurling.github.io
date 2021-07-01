@@ -306,7 +306,7 @@ input {
     margin: .25rem
 }
 .sbutton{
-    background-color: var(--fourth-color);
+    background-color: var(--secondary-color);
     font-family: var(--heading-font);
     color: var(--white-color);
     padding: .5rem;
@@ -328,7 +328,7 @@ form em{
     width: 100px;
 }
 button {
-    background-color: var(--fourth-color);
+    background-color: var(--secondary-color);
     font-family: var(--heading-font);
     color: var(--white-color);
     border: none;
