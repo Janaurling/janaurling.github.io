@@ -329,9 +329,10 @@ form em{
 .headerimage {
     width: 100px;
 }
-button{
-    background-color: var(--secondary-color);
-    color: var(--fourth-color);
+button {
+    background-color: var(--fourth-color);
+    font-family: var(--heading-font);
+    color: var(--white-color);
     border: none;
     border-radius: 10px;
     padding: .5rem;
