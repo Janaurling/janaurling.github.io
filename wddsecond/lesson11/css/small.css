@@ -318,7 +318,7 @@ input {
 }
 form em{
     font-size: .75rem;
-    color:var(--fourth-color);
+    color:var(--secondary-color);
 }
 .headertitles {
     display: flex;
