@@ -47,4 +47,22 @@ var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
     }    
 });
 
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+            const towns = jsonObject['towns'];
+            let cityname = document.getElementById('cityname').textContent 
+            for (let i = 0; i < towns.length; i++) {
+
+                if (towns[i].name ==  cityname){
+
+                    document.getElementById('townevents').textContent = `${towns[i].events}`;
+
+                }
+            }
+            });
 

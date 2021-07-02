@@ -16,11 +16,22 @@
    
     .prestonpage{
         display: grid;
-        grid-template-rows: .55fr .5fr 2fr;
+        grid-template-rows: .65fr .5fr 2fr;
         max-width: 1050px;
     }
+    .sodaspringspage{
+        display: grid;
+        grid-template-rows: .45fr .5fr 2fr;
+        max-width: 1050px;    
+    }
+    .fishhavenpage{
+        display: grid;
+        grid-template-rows: .45fr .5fr 2fr;
+        max-width: 1050px;    
+    }
     .prestonsection1{
-        position: relative
+        position: relative;
+        max-height: fit-content;
     }
     .prestonheroimage{
         position: absolute;
@@ -30,16 +41,16 @@
     .weathersummary{
 
         background-color: rgb(255,255,255,.8);
-        border: 2px solid var(--accent1-color);
+    
         z-index:2;
         position: absolute;
         width: 20rem;
         grid-row: 1/2;
         margin: 1rem; 
-        border-radius:  4px;
+
     }
 
-    .fivedayforecast{
+    .prestonsection2{
 
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -115,9 +126,7 @@
     .prestonheroimage img{
         max-width: 1050px;
     }
-    .prestonsection1{
-        max-height: fit-content;
-    }
+  
     .gallery{
         display: grid;
         grid-template-columns: 1fr 1fr;
