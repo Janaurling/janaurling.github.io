@@ -47,22 +47,20 @@ var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
     }    
 });
 
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-fetch(requestURL)
+ const eventsURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+fetch(eventsURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-            const towns = jsonObject['towns'];
-            let cityname = document.getElementById('cityname').textContent 
-            for (let i = 0; i < towns.length; i++) {
-
-                if (towns[i].name ==  cityname){
-
-                    document.getElementById('townevents').textContent = `${towns[i].events}`;
-
-                }
-            }
-            });
+        const towns = jsonObject["towns"];
+        let cityname = document.getElementById('cityname').textContent 
+        const prestonInfo = towns.filter(town => town.name == cityname);
+        for (let i = 0; i < prestonInfo[0].events.length; i++) {
+            let event = document.createElement('p');
+            event.textContent = prestonInfo[0].events[i];
+            document.querySelector(".events-section").appendChild(event);
+        }
+    });
 
