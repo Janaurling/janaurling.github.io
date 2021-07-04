@@ -50,7 +50,9 @@ h3 {
 }
 h4{
     margin: 0; 
-    padding-left: 1rem
+    padding-left: 1rem;
+    color: var(--secondary-color);
+    font-style: italic;
 }
 
 img {
