@@ -1,0 +1,77 @@
+{
+    "companies":
+[
+    {
+      "companyName": "Cleary Zimmermann",
+      "logoName": "cleary-zimmermann.png",
+      "phoneNumber": "(210) 447-6100",
+      "address": "1344 S. Flores, Suite 101 San Antonio, Texas 78204",
+      "instagram": "@clearyzimm",
+      "link": "https://clearyzimmermann.com/ "
+    },
+    {
+      "companyName": "SevenTwenty Collective",
+      "logoName": "seventwenty.png",
+      "phoneNumber": "210-348-9864",
+      "address": "4831 FREDERICKSBURG ROAD SAN ANTONIO, TX, 78229",
+      "instagram": "@salon_seventwenty",
+      "link": "https://www.salonseventwenty.com/ "
+    },
+    {
+      "companyName": "Wayne's Wings",
+      "logoName": "waynes-wings.jpg",
+      "phoneNumber": "(210) 300-3891",
+      "address": "4453 Walzem Rd, San Antonio, TX 78218",
+      "instagram": "@wayneswingss",
+      "link": "https://www.wayneswingssa.com/ "
+    },
+    {
+      "companyName": "OCI Solar Power",
+      "logoName": "ocisolar.png",
+      "phoneNumber": "(210) 453-3100",
+      "address": "300 Convent Ste 1900 San Antonio, TX 78205",
+      "instagram": "@cps_energy",
+      "link": "https://ocisolarpower.com/ "
+    },
+    {
+      "companyName": "South Texas Blood and Tissue Center",
+      "logoName": "stblood.png",
+      "phoneNumber": "(210) 731-5555",
+      "address": "6211 W IH 10 San Antonio, TX 78201",
+      "instagram": "@connectforlife",
+      "link": "https://biobridgeglobal.org/donors/blood-donation-centers/ "
+    },
+    {
+      "companyName": "Pied Piper Pest Control",
+      "logoName": "pppestcontrol.jpg",
+      "phoneNumber": "(210) 826-2030",
+      "address": "12103 Jones Maltsberger Rd San Antonio, TX 78247 4202",
+      "instagram": "@piedpiperpestcontrol",
+      "link": "http://www.sabugs.com/ "
+    },
+    {
+      "companyName": "knight security systems",
+      "logoName": "knightsecurity.png",
+      "phoneNumber": "210-749-1034",
+      "address": "401 Isom Rd. San Antonio, TX 78216",
+      "instagram": "",
+      "link": "https://knightsecurity.com/ "
+    },
+    {
+      "companyName": "Jackson Hewitt Tax Service",
+      "logoName": "jhtax.jpg",
+      "phoneNumber": "(210) 819-9876",
+      "address": "1726 Fredericksburg Rd Ste 105 San Antonio, TX 78201",
+      "instagram": "",
+      "link": "https://www.jacksonhewitt.com/"
+    },
+    {
+      "companyName": "",
+      "logoName": "",
+      "phoneNumber": "",
+      "address": "",
+      "instagram": "",
+      "link": ""
+    }
+   ]
+}
