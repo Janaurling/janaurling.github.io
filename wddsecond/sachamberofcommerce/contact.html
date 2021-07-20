@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A place for San Antonio entrepreneurs to connect and improve our community">
+    <meta name="keywords" content="local, chamber, commerce, network, san, antonio, san antonio, connect, community">
+    <title>San Antonio Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+
+    <link rel="icon" href="images/SAchamberofcommerce.png">
+</head>
+
+<body>
+    <header>
+        <div class="headerlogo">
+            <a href="index.html"><img src="images/SAchamberofcommerce.png" alt="chamber of commerce logo"></a>
+        </div>
+        <div class="headerimage">
+            <img src="images/san-antonio-skyline-night.jpg" alt="San Antonio Skyline">
+        </div>
+        <div class="headertitles">
+            <div class="headerlarge">
+                <h1>San Antonio Chamber of Commerce</h1>
+            </div>
+            <div class="headersmall">
+                <h1>San Antonio</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()" class="menubox">&#9776; Menu</a></li>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+        </nav>
+        <div class="Contactpage">
+            <div class="contactsection1">
+                <h2>Contact Us</h2>
+                <h3>info@sachamberofcommerce.com</h3>
+                <h3>210-555-5555</h3>
+
+            </div>
+            <div class="contactsection2">
+                <form class="joinform" method="get" action="thanks.html">
+                    <fieldset class="contactform">
+                        <legend>Personal Info</legend>
+                        <label>Title<br>
+                            <input Browsername="title" list="titlelist"></label>
+                        <datalist id="titlelist">
+                            <option value="Mrs"></option>
+                            <option value="Mr"></option>
+                            <option value="Miss"></option>
+                            <option value="Ms"></option>
+                            <option value="Mx"></option>
+                            <option value="Sir"></option>
+                            <option value="Dr"></option>
+                            <option value="Lady"></option>
+                            <option value="Lord"></option>
+                            <option value="Other"></option>
+                            <option value="None"></option>
+                        </datalist>
+                        <br>
+                        <label>First Name: <em>(required)</em><br>
+                            <input type="text" name="first-name" placeholder="First Name" required>
+                        </label><br>
+                        <label>Last Name: <em>(required)</em><br>
+                            <input type="text" name="last-name" placeholder="Last Name" required>
+                        </label><br>
+
+                        <label>Email: <em>(required)</em><br>
+                            <input type="email" name="email" placeholder="example@example.com" required>
+                        </label><br>
+                        <label>Phone Number: <br>
+                            <input type="tel" name="phone-number" placeholder="XXX-XXX-XXXX">
+                        </label><br>
+                        <label>Message: <br>
+                            <input type="text" name="message" placeholder="How can we help you?">
+                        </label><br>
+                        <div class="submitbutton">
+                            <input type="submit" class="sbutton" value="Let's get in touch"><br>
+
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="contactsection3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222287.21417734085!2d-98.65330195514248!3d29.480261771046642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58af04d00eaf%3A0x856e13b10a016bc!2sSan%20Antonio%2C%20TX!5e0!3m2!1sen!2sus!4v1626749094028!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contactsection4">
+                <h2>Chamber Directors</h2>
+                <div class="directordiv">
+                    <h3>Aysha Ponce</h3>
+                    <img src="images/director1.jpg" alt="Aysha Ponce">
+                    <p>Aysha is a San Antonio Native and has made it her life's purpose to improve this community and Area. After creating several branches of her Real Estate business, she has turned her efforts towards the community and how she can help improve the life of every citizen here.</p>
+                </div>
+                <div class="directordiv">
+
+                    <h3>Damian Nichols</h3>
+                    <img src="images/director2.jpg" alt="Damian Nichols">
+                    <p>Damien has been in San Antonio for the majority of his life. After a brief stint in Chicago, he realized that San Antonio really is the best city in the world! He moved back in 2013 and plans to stay here for the rest of his life. He has made his career as an engineer and spent 15 years in that industry.</p>
+                </div>
+                <div class="directordiv">
+
+                    <h3>Brenna Ramirez</h3>
+                    <img src="images/director3.jpg" alt="Brenna Ramirez">
+                    <p>Brenna is the newest of our directors but has proven herself quickly. She loves San Antonio and appreciates the difficulties entrepreneurs in this area face and has helped the chamber to streamline our services immensely. </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <p>info@sachamberofcommerce.com<br>210-555-5555</p>
+            <div class="socialicons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/fb-icon.png" alt="Facebook icon" width="32">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/insta-icon.png" alt="Instagram icon" width="32">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter-icon.png" alt="Twitter icon" width=32>
+                </a>
+                <a href="https://www.gmail.com" target="_blank">
+                    <img src="images/email-icon.png" alt="Email icon" width=32>
+                </a>
+            </div>
+
+        </div>
+        <div class="footerinfo">
+            &copy; 2021 | Jana Urling | Texas | <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+            <date></date>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+            google: {
+                families: [
+                    'Spartan, Roboto'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

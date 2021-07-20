@@ -7,6 +7,7 @@
     --fifth-color: #000000;
     --accent1-color: #F4B701;
     --accent2-color: #4F4F4F;
+    --accent3-color: #feeaae;
 
     --heading-font: 'spartan', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -76,7 +77,8 @@ nav>ul{
 }
 
 .navigation li {
-    display: none
+    display: none;
+    padding: 1rem
 }
 
 .responsive li {
@@ -88,7 +90,7 @@ footer{
 footer img{
     width: 32px
 }
-.hbutton{
+.hbutton, .sbutton{
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     padding: .5rem;
@@ -145,4 +147,60 @@ section a:link{
 .directorybusinesscards{
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.labl {
+    display : block;
+    width: 200px;
+}
+.labl > input{ 
+    visibility: hidden; 
+    position: absolute; 
+}
+.labl > input + div{ 
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.labl > input:checked + div{ 
+    background-color: var(--accent3-color);
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+}
+fieldset{
+    border: 1px solid var(--primary-color); 
+    border-radius: 5px;
+}
+em{
+    color: var(--accent2-color);
+}
+input{
+    margin: 0.5rem;
+    width: 80%
+}
+fieldset{
+    margin: 1rem
+}
+.viewbutton img{
+    width: 20px
+}
+.listview div{
+    display: flex; 
+    width: 100%;
+    justify-content: space-between
+}
+.listview section{
+    min-width: fit-content;
+    max-width: 100%;
+}
+.listview p{
+   max-width: 200px;
+
+}
+.listview h2{
+    max-width: 210px;
+}
+.listview a{
+    padding: 1rem
+}
+#directorysection3, #gb{
+    display:none
 }
