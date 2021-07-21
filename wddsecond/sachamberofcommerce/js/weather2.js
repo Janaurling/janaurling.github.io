@@ -8,7 +8,7 @@ fetch(forecastURL2)
   .then((jsObject) => {
    console.log(jsObject);
 
-var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   for (let i = 0; i < 1; i++) {
       let card = document.createElement('section');
       let h2 = document.createElement('h2');

@@ -86,6 +86,7 @@ nav>ul{
 }
 footer{
     background-color: var(--third-color);
+    padding: 1rem
 }
 footer img{
     width: 32px
@@ -100,8 +101,8 @@ footer img{
     border-radius: 5px;
 }
 .businesscards{
-    display: flex;
-    justify-content: center
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 section{
     background: var(--third-color);
@@ -125,25 +126,33 @@ section a:link{
     
 }
 .forecastcards, .currentweather{
-    display: flex; 
+
 
     text-align: center;
     padding: 1rem
 
 }
 .forecastcards{
-    max-width: 150px;
+  
+display: block
+   
 }
 .forecastcards section, .currentweather section{
     border: 1px solid var(--accent1-color)
 }
+.currentweather section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .forecastcards p, .currentweather p{
     margin: 0
 }
-.forecastcards img{
+.forecastcards img, .currentweather img{
     width: 100px;
     background-color: var(--fourth-color)
 }
+
 .directorybusinesscards{
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -183,17 +192,21 @@ fieldset{
     width: 20px
 }
 .listview div{
-    display: flex; 
-    width: 100%;
+   width: 100%;
     justify-content: space-between
 }
 .listview section{
     min-width: fit-content;
     max-width: 100%;
+    text-align: center;
 }
 .listview p{
    max-width: 200px;
 
+
+}
+.listview p, .listview h2, .listview h4{
+    margin:auto
 }
 .listview h2{
     max-width: 210px;
@@ -204,3 +217,50 @@ fieldset{
 #directorysection3, #gb{
     display:none
 }
+
+.directordiv {
+    text-align: center;
+    max-width: 100%;
+    margin: 1rem
+    
+}
+.contactform{
+    max-width: 600px;
+}
+.contactsection3{
+    margin: auto; 
+    justify-content: center;
+}
+.alert {
+    padding: 20px;
+    background-color: var(--accent1-color); /* Red */
+    color: var(--accent2-color);
+    margin-bottom: 15px;
+  }
+  
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+  .homesection3 p, .homesection3 h3{
+      margin:0
+  }
+  .homesection3 p, .homesection3 h3{
+    padding-top:0
+  } 
+  .events{
+      border: 1px solid var(--accent1-color);
+      border-radius: 10px;
+      margin: 1rem
+  }
+  

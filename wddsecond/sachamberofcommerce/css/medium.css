@@ -10,6 +10,9 @@
         padding: 0;
 
     }
+    picture{
+        max-width: 100%;
+    }
     .headerlogo{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -73,5 +76,39 @@
         grid-column: 1/3;
         width: 400px
     }
+   .contactusform fieldset{
+        margin:auto;
+        margin-bottom: 1rem
+    }
     
+    .currentweather section{
+        min-width: 100%;
+
+    }
+    .forecastcards{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-content: space-between;
+        min-width: 100%;
+        max-width: 150px;
+        display: flex
+    }
+    .currentweather p, .currentweather h2{
+        font-size: 2rem;
+    }
+       
+       
+    
+  
+   
+    .directordiv{
+        max-width: 30%;
+    }
+    .listview div{
+        display: flex; 
+
+    }
+    .hbutton{
+        max-width: 30%;
+    }
 }

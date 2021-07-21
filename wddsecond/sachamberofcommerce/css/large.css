@@ -1,3 +1,23 @@
 @media only screen and (min-width: 800px){
+.homeheroimage{
+    max-width: 1000px;
+}
+.contactsection4{
+    display: flex;
+    justify-content: space-between;
+}
 
+.homesection3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.currentweather{
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+.events{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
 }
