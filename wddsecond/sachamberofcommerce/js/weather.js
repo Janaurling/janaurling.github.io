@@ -6,7 +6,7 @@ const forecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-   console.log(jsObject);
+   //console.log(jsObject);
 
 
     const imagesrc = "https://openweathermap.org/img/wn/";

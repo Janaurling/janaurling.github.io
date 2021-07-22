@@ -6,7 +6,7 @@ const forecastURL3 = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat3
 fetch(forecastURL3)
   .then((response) => response.json())
   .then((jsObject) => {
-   console.log(jsObject);
+   //console.log(jsObject);
    for (let i = 1; i < 2; i++) {
       let card = document.createElement('section');
       let advs = document.createElement('p');

@@ -6,7 +6,7 @@ const forecastURL2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat2
 fetch(forecastURL2)
   .then((response) => response.json())
   .then((jsObject) => {
-   console.log(jsObject);
+   //console.log(jsObject);
 
 var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   for (let i = 0; i < 1; i++) {
