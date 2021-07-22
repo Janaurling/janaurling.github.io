@@ -8,6 +8,7 @@
     --accent1-color: #F4B701;
     --accent2-color: #4F4F4F;
     --accent3-color: #feeaae;
+    --accent4-color: #fafafa;
 
     --heading-font: 'spartan', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -171,6 +172,8 @@ display: block
 .labl {
     display : block;
     width: 200px;
+    background-color: var(--accent4-color);
+    border-radius: 10px;
 }
 .labl > input{ 
     visibility: hidden; 
@@ -274,4 +277,4 @@ fieldset{
       border-radius: 10px;
       margin: 1rem
   }
-  
+ 
