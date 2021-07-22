@@ -30,6 +30,7 @@ p{
 img{
     width: 100%;
     padding: 1rem
+    
 }
 header{
     justify-content: center;
@@ -55,6 +56,11 @@ header{
 nav{
     background-color: var(--third-color); 
     text-align: center;
+}
+nav a:hover {
+    background-color: var(--fourth-color);
+    text-decoration: none;
+
 }
 .headerlogo{
     max-width: 50px;
@@ -99,6 +105,10 @@ footer img{
     font-family: var(--paragraph-font);
     border: none; 
     border-radius: 5px;
+
+}
+.hbutton:hover, .sbutton:hover{
+    cursor: pointer
 }
 .businesscards{
     display: grid; 
@@ -144,6 +154,7 @@ display: block
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: fit-content;
 }
 .forecastcards p, .currentweather p{
     margin: 0
@@ -241,7 +252,7 @@ fieldset{
 
   .closebtn {
     margin-left: 15px;
-    color: white;
+    color: var(--accent2-color);
     font-weight: bold;
     float: right;
     line-height: 20px;
@@ -250,7 +261,7 @@ fieldset{
   }
 
   .closebtn:hover {
-    color: black;
+    color: var(--fifth-color);
   }
   .homesection3 p, .homesection3 h3{
       margin:0
